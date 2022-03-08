@@ -5,11 +5,11 @@
         </div>
         <div class="col-lg-6 col-12 mt-lg-0 mt-4 d-flex align-items-center justify-content-end">
             <div class="row w-100 d-flex justify-content-lg-end justify-content-center">
-                <a href="" class="col-lg-1 col-md-1 col-5 p-3 d-flex justify-content-center align-items-center mx-2"><i class="fs-5 fa-brands fa-facebook-f"></i></a>
-                <a href="" class="col-lg-1 col-md-1 col-5 p-3 d-flex justify-content-center align-items-center mx-2"><i class="fs-5 fa-brands fa-twitter"></i></a>
-                <a href="" class="col-lg-1 col-md-1 col-5 p-3 d-flex justify-content-center align-items-center mx-2"><i class="fs-5 fa-brands fa-instagram"></i></a>
-                <a href="" class="col-lg-1 col-md-1 col-5 p-3 d-flex justify-content-center align-items-center mx-2"><i class="fs-5 fa-brands fa-tiktok"></i></a>
-                <a href="" class="col-lg-1 col-md-1 col-5 p-3 d-flex justify-content-center align-items-center mx-2"><i class="fs-5 fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/officialumntv/" class="col-lg-1 col-md-1 col-5 p-3 d-flex justify-content-center align-items-center mx-2"><i class="fs-5 fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/officialumntv" class="col-lg-1 col-md-1 col-5 p-3 d-flex justify-content-center align-items-center mx-2"><i class="fs-5 fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/officialumntv/" class="col-lg-1 col-md-1 col-5 p-3 d-flex justify-content-center align-items-center mx-2"><i class="fs-5 fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@officialumntv?lang=en" class="col-lg-1 col-md-1 col-5 p-3 d-flex justify-content-center align-items-center mx-2"><i class="fs-5 fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/company/umn-tv/" class="col-lg-1 col-md-1 col-5 p-3 d-flex justify-content-center align-items-center mx-2"><i class="fs-5 fa-brands fa-linkedin"></i></a>
                 <a href="" class="col-lg-1 col-md-1 col-5 p-3 d-flex justify-content-center align-items-center mx-2"><i class="fs-5 fa-brands fa-line"></i></a>
             </div>
         </div>

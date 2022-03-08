@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="{{ asset('css/template/footer.css') }}">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('fontawesome/css/all.css') }}">
+    <!-- About Us -->
+    <link rel="stylesheet" href="{{ asset('css/template/about.css') }}">
+
 
     <!-- Custom CSS -->
     @yield('custom-css')
