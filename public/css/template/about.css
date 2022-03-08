@@ -1,4 +1,4 @@
-.box-section1 {
+.about-section1 {
     width:100%;
     height:auto;
     border-radius: 40px;
@@ -8,14 +8,14 @@
     padding-bottom: 50pt;
 }
 
-.box-section2 {
+.about-section2 {
     width:100%;
     height:auto;  
     padding-top: 100pt;
     padding-bottom: 100pt;
 }
 
-.box-section3 {
+.about-section3 {
     width:100%;
     height:auto;
     border-radius: 40px;
@@ -26,19 +26,25 @@
     margin-bottom: 5em;
 }
 
-p {
+.about-section2,.about-section1 p {
     text-align: justify;
     color:white;
     font-size: 16pt;
 }
 
-h1 {
+.about-section3 p {
+    text-align: justify;
+    color:white;
+    font-size: 18pt;
+}
+
+.about-section2 h1{
     color:white;
     font-size: 52pt;
     text-align: right;
 }
 
-h2 {
+.about-section3 h1{
     color:white;
     font-size: 50pt;
     text-align: left;

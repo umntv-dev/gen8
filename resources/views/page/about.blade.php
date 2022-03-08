@@ -1,7 +1,7 @@
 @extends('template.app')
 
 @section('content')
-<div class="box-section1">
+<div class="about-section1">
     <div class="container col-10">
         <div class="d-flex align-items-center justify-content-center mb-3">
             <img src="{{ asset('images/logo/logo2.png') }}" alt="logo" width="350"> 
@@ -15,7 +15,7 @@
     </div>
 </div>
 
-<div class="box-section2">
+<div class="about-section2">
     <div class="col-10 container">
         <div class="row">
             <div class="col-4">
@@ -33,19 +33,19 @@
     </div>
 </div>
 
-<div class="box-section3">
+<div class="about-section3">
     <div class="col-10 container">
         <div class="row">
             <div class="col-6 px-5">
-                <h2><b>
+                <h1><b>
                     Visi
-                </b></h2>
+                </b></h1>
                 <p>Mewujudkan pribadi yang bertanggung jawab dan memiliki kompetensi dalam dunia penyiaran.</p>
             </div>
             <div class="col-6 px-5">
-                <h2><b>
+                <h1><b>
                     Misi
-                </b></h2>
+                </b></h1>
                 <p>Menjadi wadah pembelajaran mengenai dunia penyiaran bagi mahasiswa UMN, dan Mengembangkan bakat dan kreativitas 
                 mahasiswa UMN dalam dunia penyiaran</p>
             </div>
