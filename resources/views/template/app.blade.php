@@ -29,9 +29,8 @@
 
     <div class="content">
         @include('template.navbar')
+        @yield('content')
     </div>
-
-    @yield('content')
     
     <!-- Jquery 4 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
