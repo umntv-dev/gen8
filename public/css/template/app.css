@@ -1,0 +1,9 @@
+body{
+    background-image:url(../../images/background/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content{
+    min-height: 150vh;
+}

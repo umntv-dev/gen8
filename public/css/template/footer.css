@@ -1,0 +1,37 @@
+footer{
+    background-image:url('../../images/background/bg-footer.png');
+    min-height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px -4px 10px rgba(50,50,50, 0.75);
+}
+
+footer a{
+    border-radius: 50%;
+    background-color: white;
+    text-decoration: none;
+    color:black;
+}
+
+footer a:hover{
+    background-color:black;
+    color:white;
+}
+
+footer .address{
+    margin-top:60px;
+}
+
+footer .address p{
+    color:white;    
+    font-family: montserrat;
+    letter-spacing: 1.2px;
+}
+
+@media(max-width:769px){
+    footer a{
+        width: 50px !important;
+        height: 50px !important;
+        margin-top:10px !important;
+    }
+}
