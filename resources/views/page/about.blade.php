@@ -18,12 +18,12 @@
 <div class="about-section2">
     <div class="col-10 container">
         <div class="row">
-            <div class="col-4">
+            <div class="col-xl-4 col-lg-5 col-md-auto col-sm-12 col-xs-12 align-sm-center">
                 <h1><b>
-                    Rayakan<br>Semangat<br>Mudamu<br>
+                    Rayakan Semangat Mudamu 
                 </b></h1>
             </div>
-            <div class="col-8">
+            <div class="col-xl-8 col-lg-7 col-md-auto col-sm-12 col-xs-12">
                 <p>Muda merupakan kata yg tepat untuk menggambarkan UMN TV. Jiwa muda dikenal penuh dengan gejolak dan dinamika, 
                 tidak takut untuk berekspresi atau tampil beda. Banyak orang mengatakan, manusia benar-benar merasa hidup pada 
                 saat muda. Semangat muda yang penuh warna, inilah yang kami hidupi dan wujudkan dalam UMN TV. Kami tidak berjalan 
@@ -36,18 +36,39 @@
 <div class="about-section3">
     <div class="col-10 container">
         <div class="row">
-            <div class="col-6 px-5">
+            <div class="col-md-6 col-sm-12 col-xs-12 px-5">
                 <h1><b>
                     Visi
                 </b></h1>
                 <p>Mewujudkan pribadi yang bertanggung jawab dan memiliki kompetensi dalam dunia penyiaran.</p>
             </div>
-            <div class="col-6 px-5">
+            <div class="col-md-6 col-sm-12 col-xs-12 px-5">
                 <h1><b>
                     Misi
                 </b></h1>
                 <p>Menjadi wadah pembelajaran mengenai dunia penyiaran bagi mahasiswa UMN, dan Mengembangkan bakat dan kreativitas 
                 mahasiswa UMN dalam dunia penyiaran</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about-section4">
+    <div class="col-10 container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>
+                    Documentation
+                </h1>
+                <div class="about-line"></div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-3">   
+                </div>
+                <div class="col-md-3">   
+                </div>
+                <div class="col-md-3">   
+                </div>
             </div>
         </div>
     </div>

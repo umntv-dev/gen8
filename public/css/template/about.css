@@ -9,8 +9,6 @@
 }
 
 .about-section2 {
-    width:100%;
-    height:auto;  
     padding-top: 100pt;
     padding-bottom: 100pt;
 }
@@ -24,6 +22,15 @@
     padding-top: 100pt;
     padding-bottom: 100pt;
     margin-bottom: 5em;
+}
+
+.about-section4 { 
+    padding-top: 50pt;
+    padding-bottom: 100pt;
+}
+
+.about-section4 h1 { 
+    color:white;
 }
 
 .about-section2,.about-section1 p {
@@ -49,4 +56,9 @@
     font-size: 50pt;
     text-align: left;
     padding-bottom: 10pt;
+}
+
+.about-line {
+    height:1pt;
+    background-color:white;
 }
