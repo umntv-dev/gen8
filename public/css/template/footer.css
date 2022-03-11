@@ -8,6 +8,8 @@ footer{
 
 footer a{
     border-radius: 50%;
+    width:50px !important;
+    height:50px !important;
     background-color: white;
     text-decoration: none;
     color:black;
