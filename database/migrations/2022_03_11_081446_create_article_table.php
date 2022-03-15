@@ -20,7 +20,7 @@ class CreateArticleTable extends Migration
             $table->unsignedBigInteger('id_divisi');
             $table->dateTime('waktu');
             $table->string('image');
-            $table->string('description');
+            $table->longText('description');
             $table->timestamps();
 
             $table->foreign('id_crews')->references('id')->on('crews');
