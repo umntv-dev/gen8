@@ -1,0 +1,35 @@
+.articleInformation h2 {
+    font-weight: bolder;
+    text-shadow: 0px 2px 8px grey;
+}
+
+#articleThumbnail {
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.articleContent {
+    text-align: justify;
+}
+
+.recThumbnail {
+    background-image: url(../../images/article/article.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.recDesc {
+    padding-top: 30%;
+    padding-bottom: 4px;
+}
+
+.recDesc p {
+    font-size: 10px;
+    margin-bottom: 0;
+}
