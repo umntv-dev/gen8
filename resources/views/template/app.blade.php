@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="{{ asset('fontawesome/css/all.css') }}">
     <!-- About Us -->
     <link rel="stylesheet" href="{{ asset('css/template/about.css') }}">
+    <!-- Article -->
+    <link rel="stylesheet" href="{{ asset('css/template/article.css') }}">
     <!-- Article detail -->
     <link rel="stylesheet" href="{{ asset('css/template/articledetail.css') }}">
 

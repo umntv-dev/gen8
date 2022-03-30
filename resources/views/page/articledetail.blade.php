@@ -1,6 +1,6 @@
 @extends('template.app') @section('content')
-<div class="container text-white">
-    <div class="articleInformation">
+<div class="articleDetail container">
+    <div class="information">
         <h6>PROGRAMS</h6>
         <h2 id="judul">Manfaat Meminum Coklat Panas Untuk Kesehatan Tubuh</h2>
         <h6>
@@ -8,11 +8,11 @@
             <span id="tanggal">February 21, 2022</span>
         </h6>
         <img
-            id="articleThumbnail"
+            id="thumbnail"
             src="{{ asset('images/article/article.png') }}"
         />
     </div>
-    <div class="articleContent py-4">
+    <div class="contents py-4">
         <p>
             JAKARTA, UMN TV.com - Lorem Ipsum is simply dummy text of the
             printing and typesetting industry. Lorem Ipsum has been the
@@ -37,24 +37,24 @@
             PageMaker including versions of Lorem Ipsum.
         </p>
     </div>
-    <div class="recommendation my-4">
+    <div class="recommended my-4">
         <h2>More News</h2>
         <hr style="height: 2px; opacity: 100%" />
         <div class="row mx-1 justify-content-center">
-            <div class="col-md recThumbnail m-1">
-                <div class="recDesc px-2">
+            <div class="thumbnail col-md m-1">
+                <div class="description px-3">
                     <p>PROGRAM</p>
                     <h6>Manfaat Meminum Coklat Panas Untuk Kesehatan Tubuh</h6>
                 </div>
             </div>
-            <div class="col-md recThumbnail m-1">
-                <div class="recDesc px-2">
+            <div class="thumbnail col-md m-1">
+                <div class="description px-3">
                     <p>PROGRAM</p>
                     <h6>Manfaat Meminum Coklat Panas Untuk Kesehatan Tubuh</h6>
                 </div>
             </div>
-            <div class="col-md recThumbnail m-1">
-                <div class="recDesc px-2">
+            <div class="thumbnail col-md m-1">
+                <div class="description px-3">
                     <p>PROGRAM</p>
                     <h6>Manfaat Meminum Coklat Panas Untuk Kesehatan Tubuh</h6>
                 </div>

@@ -1,0 +1,107 @@
+.article {
+    color: white;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.3),
+        rgba(0, 0, 0, 0)
+    );
+    background-repeat: no-repeat;
+    background-size: 100% 275px;
+    margin-top: 50px;
+}
+
+.article .highlight {
+    height: 300px;
+}
+
+.article .highlight .testbg {
+    background-image: url(../../images/article/article.png);
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    right: 10%;
+    top: 150px;
+    z-index: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.article .highlight .testbox {
+    position: relative;
+    width: 50%;
+    top: 20%;
+}
+
+.article .highlight .testbox p {
+    margin-bottom: 0;
+}
+
+.article .highlight .testbox h1 {
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+.article .highlight .testbox .date p {
+    margin-bottom: auto;
+}
+
+.article .highlight .testbox .date img {
+    height: 16px;
+    margin-right: 2px;
+}
+
+/* coba bikin responsive */
+@media screen and (max-width: 767px) {
+    .article .highlight .testbg {
+        align-self: center;
+        width: 80%;
+    }
+    .article .highlight .testbox {
+        width: 80%;
+        top: 18%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .article .highlight .testbg {
+        top: 125px;
+    }
+    .article .highlight .testbox {
+        margin: auto;
+    }
+}
+
+.article .recommended .row {
+    justify-content: center;
+}
+
+.article .recommended .thumbnail {
+    background-image: url(../../images/article/article.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.article .recommended .description {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    background-size: cover;
+    border-radius: 5px;
+    padding-top: 30%;
+    padding-bottom: 8px;
+}
+
+.article .recommended .description p {
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+.article .recommended .description h6 {
+    margin-bottom: 4px;
+}
+
+.article .recommended .description .date img {
+    height: 12px;
+    margin-right: 2px;
+}
