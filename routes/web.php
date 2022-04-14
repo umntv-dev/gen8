@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('page.home');
 });
 
+Route::get('/program', function () {
+    return view('page.program');
+});
+
 Route::get('/playvideo', function () {
     return view('page.playvideo');
 });

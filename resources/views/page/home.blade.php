@@ -1,7 +1,7 @@
 @extends('template.app')
 
 @section('custom-css')
-<link rel="stylesheet" href="{{ asset('css/template/home.css') }}">
+<link rel="stylesheet" href="{{ asset('css/page/home.css') }}">
 @endsection
 
 @section('content')
@@ -19,7 +19,9 @@
                       <p class="detail-program">Chelsea akan nemenin kalian di Sanantara dengan berbagai informasi dan fakta menarik seputar budaya Indonesia.</p>
                     <div class="btn-program">
                       <button class="btn">
-                        <p>Selengkapnya</p>
+                        <a href="/program">
+                          <p>Selengkapnya</p>
+                        </a>
                       </button>
                       <button class="btn">
                         <p><i class="fa-solid fa-circle-play"></i> Episode</p>
@@ -62,11 +64,11 @@
     <div class="swiper mySwiper2">
       <div class="swiper-wrapper">
           <div class="swiper-slide s2">
-            <figure class="hover-img red">
+            <figure class="hover-img">
               <img src="{{ asset('images/program/program1.png') }}" alt="">
               <figcaption>
                 <div><h2>Sanantara</h2></div>
-                <div><p>Chelsea akan nemenin kalian di Sanantara dengan berbagai informasi dan fakta menarik seputar budaya Indonesia.</p></div>
+                 <div><p>Chelsea akan nemenin kalian di Sanantara dengan berbagai informasi dan fakta menarik seputar budaya Indonesia.</p></div>
                 <a href="#"></a>
               </figcaption>			
             </figure>
@@ -125,12 +127,16 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      autoplay: {
+        delay: 2000,
+        },
     });
   </script>
 
 <script>
   var swiper = new Swiper(".mySwiper2", {
     effect: "coverflow",
+    loop: true,
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
@@ -144,6 +150,9 @@
     pagination: {
       el: ".swiper-pagination",
     },
+    autoplay: {
+        delay: 2500,
+        },
   });
 </script>
 @endsection

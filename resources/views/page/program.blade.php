@@ -1,28 +1,38 @@
 @extends('template.app')
 
 @section('custom-css')
-<link rel="stylesheet" href="{{ asset('css/page/playvideo.css') }}">
+<link rel="stylesheet" href="{{ asset('css/page/program.css') }}">
 @endsection
 
 @section('content')
-<div class="container">
-    <div class="videowrapper">
-        <iframe src="https://www.youtube.com/embed/Hqq3uLjMOEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="videoplayer" allowfullscreen></iframe>
-    </div>
-    <div class="details">
-        <div class="title">
-            <h3>Episode 1</h3>
-            <h1>Jajanan Khas Nusantara yang Bisa Kamu Temui di Pasar!</h1>
-            <p>Hallo, Taruna!!
-
-                Pada episode pertama di season 2 ini, Chelsea mengajak Taruna untuk menjelajahi wilayah Nusantara melalui jajanan tradisional yang bisa taruna temukan di pasar. Selain kaya akan rasa, jajanan-jajanan tersebut juga kaya akan sejarah dan cerita yang unik. Yuk, makan bareng Chelsea sambil kita ulik satu-satu cerita unik dibalik setiap jajanan!</p>
+<div class="sec1">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-6 kotak-img">
+              <img src="{{ asset('images/program/program1.png') }}" class="img-program">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="title-program">Sanantara</h1>
+              <p class="detail-program">News</p>
+                <p class="detail-program">
+                  Seberapa tau nih Ultimates tentang budaya Indonesia? 
+                  Jangan khawatir, Chelsea akan nemenin kalian di Sanantara dengan berbagai 
+                  informasi dan fakta menarik seputar budaya Indonesia lho, tentunya dengan sajian yang menarik dan inovatif.
+                <br><br>
+                Yukk! Kulik hal-hal baru bersama Sanantara, hanya di UMN TV setiap Selasa pukul 19:00 WIB Hanya di Kanal Youtube UMN TV.
+                <br> <br>
+                Sanantara, Yang Muda Yang Berbudaya!
+                </p>
+            <div class="jadwal">
+                <p class="detail-program"><i class="fa-regular fa-clock"></i> Setiap Selasa pukul 19:00 WIB </p>
+            </div>
+            </div>
         </div>
     </div>
 </div>
-
-<div class="sec2 mb-5">
+<div class="sec2">
     <div class="container">
-        <div class="season">
+        <div class="title">
             <h1>Season 1</h1>
         </div><hr>
 
@@ -30,25 +40,25 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
+                      <img src="{{ asset('images/program/video1.png') }}" alt="">
                       <h2 class="detail-program text-center">Episode 1</h2>
                    </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
+                      <img src="{{ asset('images/program/video1.png') }}" alt="">
                       <h2 class="detail-program text-center">Episode 1</h2>
                    </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
+                      <img src="{{ asset('images/program/video1.png') }}" alt="">
                       <h2 class="detail-program text-center">Episode 1</h2>
                    </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
+                      <img src="{{ asset('images/program/video1.png') }}" alt="">
                       <h2 class="detail-program text-center">Episode 1</h2>
                    </a>
                 </div>
@@ -58,7 +68,7 @@
           </div>
 
 
-          <div class="season">
+          <div class="title">
             <h1>Season 2</h1>
         </div><hr>
 
@@ -66,25 +76,25 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
+                      <img src="{{ asset('images/program/video1.png') }}" alt="">
                       <h2 class="detail-program text-center">Episode 1</h2>
                    </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
+                      <img src="{{ asset('images/program/video1.png') }}" alt="">
                       <h2 class="detail-program text-center">Episode 1</h2>
                    </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
+                      <img src="{{ asset('images/program/video1.png') }}" alt="">
                       <h2 class="detail-program text-center">Episode 1</h2>
                    </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
+                      <img src="{{ asset('images/program/video1.png') }}" alt="">
                       <h2 class="detail-program text-center">Episode 1</h2>
                    </a>
                 </div>
@@ -94,13 +104,12 @@
           </div>
     </div>
 </div>
-
 @endsection
 
 @section('custom-js')
 <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 5,
       slidesPerGroup: 2,
       loop: true,
@@ -116,12 +125,6 @@
       autoplay: {
         delay: 2500,
         },
-
-        breakpoints: {
-            1200: {
-            slidesPerView: 2,
-          },
-         },
     });
   </script>
 @endsection

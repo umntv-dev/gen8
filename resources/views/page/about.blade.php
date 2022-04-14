@@ -1,5 +1,7 @@
 @extends('template.app')
-
+@section('custom-css')
+<link rel="stylesheet" href="{{ asset('css/page/about.css') }}">
+@endsection
 @section('content')
 <div class="about-section1">
     <div class="container col-10">
