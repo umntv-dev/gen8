@@ -20,11 +20,11 @@
         <hr style="height: 2px; opacity: 100%" />
         <div class="row mx-1 justify-content-center">
             @for($i = 0; $i < 3; $i++)
-                <?php $cobain++; if($cobain > $jumlah) $cobain -= $jumlah+1 ?>
-                <div class="thumbnail col-md m-1" onclick="window.location='/article/detail/{{ $articles[$cobain]->judul }}'">
+                <?php $index++; if($index > $jumlah) $index = 0 ?>
+                <div class="thumbnail col-md m-1" onclick="window.location='/article/detail/{{ $articles[$index]->judul }}'">
                     <div class="description px-3">
-                        <p>{{ $articles[$cobain]->divisi->nama }}</p>
-                        <h6>{{ $articles[$cobain]->judul }}</h6>
+                        <p>{{ $articles[$index]->divisi->nama }}</p>
+                        <h6>{{ $articles[$index]->judul }}</h6>
                     </div>
                 </div>
             @endfor

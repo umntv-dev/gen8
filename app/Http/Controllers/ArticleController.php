@@ -31,14 +31,12 @@ class ArticleController extends Controller
         //$index buat cari index dari article yang dipilih
         $index = array_search($article->id, $articles->pluck('id')->toArray());
         $jumlah = Article::count()-1;
-        $cobain = $index;
 
         return view('page.articledetail', [
             'article' => $article,
             'articles' => $articles,
             'jumlah' => $jumlah,
-            'index' => $index,
-            'cobain' => $cobain
+            'index' => $index
         ]);
     }
 
