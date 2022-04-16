@@ -6,11 +6,11 @@
         <div class="highlight">
             <div class="testbg"></div>
             <div class="testbox">
-                {{-- <p>{{ $article->divisi->nama }}</p> --}}
-                <h1>Manfaat Meminum Coklat Panas Untuk Kesehatan Tubuh</h1>
+                <p>{{ $highlight->divisi->nama }}</p>
+                <h1>{{ $highlight->judul }}</h1>
                 <div class="date d-flex flex-row align-items-center">
                     <img src="{{ asset('images/article/icons8-clock-24.png') }}" />
-                    <p>February 21,2022</p>
+                    <p>{{ Carbon\Carbon::parse($highlight->waktu)->format('d F Y') }}</p>
                 </div>
             </div>
         </div>

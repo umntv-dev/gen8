@@ -11,16 +11,15 @@ class ArticleController extends Controller
     public function index()
     {
         $article = Article::with('divisi')->get();
-        return view('page.article', [
-            'article' => $article
-        ]);
-    }
+        
+        $count = Article::count();
+        $random = rand(0,$count);
+        $highlight = $article[$random];
 
-    public function highlight()
-    {
-        $highlight = Article::with('divisi')->get();
         return view('page.article', [
+            'article' => $article,
             'highlight' => $highlight
         ]);
     }
+
 }

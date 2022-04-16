@@ -22,7 +22,6 @@ Route::get('/playvideo', function () {
     return view('page.playvideo');
 });
 
-Route::get('/article', [ArticleController::class,  'highlight']);
 Route::get('/article', [ArticleController::class,  'index']);
 
 
