@@ -11,10 +11,11 @@
 }
 
 .article .highlight {
-    height: 300px;
+    height: 200px;
+    margin-bottom: 100px;
 }
 
-.article .highlight .testbg {
+.article .highlight .background {
     background-image: url(../../images/article/article.png);
     border-radius: 5px;
     background-size: cover;
@@ -28,46 +29,46 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
-.article .highlight .testbox {
+.article .highlight .box {
     position: relative;
     width: 50%;
     top: 20%;
 }
 
-.article .highlight .testbox p {
+.article .highlight .box p {
     margin-bottom: 0;
 }
 
-.article .highlight .testbox h1 {
+.article .highlight .box h1 {
     text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.09);
 }
 
-.article .highlight .testbox .date p {
+.article .highlight .box .date p {
     margin-bottom: auto;
 }
 
-.article .highlight .testbox .date img {
+.article .highlight .box .date img {
     height: 16px;
     margin-right: 2px;
 }
 
 /* coba bikin responsive */
 @media screen and (max-width: 767px) {
-    .article .highlight .testbg {
+    .article .highlight .background {
         align-self: center;
         width: 80%;
     }
-    .article .highlight .testbox {
+    .article .highlight .box {
         width: 80%;
         top: 18%;
     }
 }
 
 @media screen and (max-width: 680px) {
-    .article .highlight .testbg {
+    .article .highlight .background {
         top: 125px;
     }
-    .article .highlight .testbox {
+    .article .highlight .box {
         margin: auto;
     }
 }
@@ -82,6 +83,7 @@
     background-position: center;
     border-radius: 5px;
     padding: 0;
+    height: 100%;
 }
 
 .article .recommended .description {
@@ -90,6 +92,7 @@
     border-radius: 5px;
     padding-top: 30%;
     padding-bottom: 8px;
+    height: 100%;
 }
 
 .article .recommended .description p {

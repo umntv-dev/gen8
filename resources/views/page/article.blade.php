@@ -3,17 +3,15 @@
 @section('content')
 <div class="article">
     <div class="container">
-        <div class="highlight">
-            <div class="testbg"></div>
-            <div class="testbox">
-                <a href="/article/detail/{{ $highlight->judul }}" class="text-decoration-none">
+        <div class="highlight" onclick="window.location='/article/detail/{{ $highlight->judul }}'">
+            <div class="background"></div>
+            <div class="box">
                 <p>{{ $highlight->divisi->nama }}</p>
                 <h1>{{ $highlight->judul }}</h1>
                 <div class="date d-flex flex-row align-items-center">
                     <img src="{{ asset('images/article/icons8-clock-24.png') }}" />
                     <p>{{ Carbon\Carbon::parse($highlight->waktu)->format('d F Y') }}</p>
                 </div>
-                </a>
             </div>
         </div>
         <div class="recommended my-4">
@@ -22,7 +20,7 @@
             <div class="row m-1">
                 <!-- div thumbnail-wrapper udah ready buat foreach() -->
                 @foreach($article as $key => $value)
-                <div class="thumbnail-wrapper col-md-4 p-1">
+                <div class="thumbnail-wrapper col-md-4 p-1" onclick="window.location='/article/detail/{{ $value->judul }}'">
                     <div class="thumbnail">
                         <div class="description px-3">
                             <p>{{ $value->divisi->nama }}</p>
