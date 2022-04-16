@@ -6,12 +6,14 @@
         <div class="highlight">
             <div class="testbg"></div>
             <div class="testbox">
+                <a href="/article/detail/{{ $highlight->judul }}" class="text-decoration-none">
                 <p>{{ $highlight->divisi->nama }}</p>
                 <h1>{{ $highlight->judul }}</h1>
                 <div class="date d-flex flex-row align-items-center">
                     <img src="{{ asset('images/article/icons8-clock-24.png') }}" />
                     <p>{{ Carbon\Carbon::parse($highlight->waktu)->format('d F Y') }}</p>
                 </div>
+                </a>
             </div>
         </div>
         <div class="recommended my-4">
