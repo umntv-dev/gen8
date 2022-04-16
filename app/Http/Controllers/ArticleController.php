@@ -25,7 +25,6 @@ class ArticleController extends Controller
     public function detail(Article $article)
     {
         $articles = Article::with('divisi')->get();
-
         $article = Article::with('divisi','crews')->find($article->id);
 
         //$index buat cari index dari article yang dipilih

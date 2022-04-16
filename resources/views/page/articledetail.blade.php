@@ -21,7 +21,7 @@
         <div class="row mx-1 justify-content-center">
             @for($i = 0; $i < 3; $i++)
                 <?php $index++; if($index > $jumlah) $index = 0 ?>
-                <div class="thumbnail col-md m-1" onclick="window.location='/article/detail/{{ $articles[$index]->judul }}'">
+                <div class="thumbnail col-md m-1" onclick="window.location='/article/detail/{{ $articles[$index]->id }}'">
                     <div class="description px-3">
                         <p>{{ $articles[$index]->divisi->nama }}</p>
                         <h6>{{ $articles[$index]->judul }}</h6>
