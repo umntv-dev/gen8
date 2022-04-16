@@ -19,24 +19,15 @@
         <h2>More News</h2>
         <hr style="height: 2px; opacity: 100%" />
         <div class="row mx-1 justify-content-center">
-            <div class="thumbnail col-md m-1" onclick="window.location='/article/detail/{{ $articles[$more1]->judul }}'">
-                <div class="description px-3">
-                    <p>{{ $articles[$more1]->divisi->nama }}</p>
-                    <h6>{{ $articles[$more1]->judul }}</h6>
+            @for($i = 0; $i < 3; $i++)
+                <?php $cobain++; if($cobain > $jumlah) $cobain -= $jumlah+1 ?>
+                <div class="thumbnail col-md m-1" onclick="window.location='/article/detail/{{ $articles[$cobain]->judul }}'">
+                    <div class="description px-3">
+                        <p>{{ $articles[$cobain]->divisi->nama }}</p>
+                        <h6>{{ $articles[$cobain]->judul }}</h6>
+                    </div>
                 </div>
-            </div>
-            <div class="thumbnail col-md m-1" onclick="window.location='/article/detail/{{ $articles[$more2]->judul }}'">
-                <div class="description px-3">
-                    <p>{{ $articles[$more2]->divisi->nama }}</p>
-                    <h6>{{ $articles[$more2]->judul }}</h6>
-                </div>
-            </div>
-            <div class="thumbnail col-md m-1" onclick="window.location='/article/detail/{{ $articles[$more3]->judul }}'">
-                <div class="description px-3">
-                    <p>{{ $articles[$more3]->divisi->nama }}</p>
-                    <h6>{{ $articles[$more3]->judul }}</h6>
-                </div>
-            </div>
+            @endfor
         </div>
     </div>
 </div>

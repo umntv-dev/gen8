@@ -30,26 +30,15 @@ class ArticleController extends Controller
 
         //$index buat cari index dari article yang dipilih
         $index = array_search($article->id, $articles->pluck('id')->toArray());
-        $more1 = $index + 1;
-        //overflow management index
-        if($more1 > Article::count()-1){
-            $more1 %= Article::count()-1;
-        }
-        $more2 = $more1 + 1;
-        if($more2 > Article::count()-1){
-            $more2 %= Article::count()-1;
-        }
-        $more3 = $more2 + 1;
-        if($more3 > Article::count()-1){
-            $more3 %= Article::count()-1;
-        }
+        $jumlah = Article::count()-1;
+        $cobain = $index;
 
         return view('page.articledetail', [
             'article' => $article,
             'articles' => $articles,
-            'more1' => $more1,
-            'more2' => $more2,
-            'more3' => $more3
+            'jumlah' => $jumlah,
+            'index' => $index,
+            'cobain' => $cobain
         ]);
     }
 
