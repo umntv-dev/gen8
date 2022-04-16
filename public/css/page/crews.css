@@ -41,6 +41,13 @@
     vertical-align: middle;
 }
 
+.swiper-pagination {
+    background-image: url(../../images/crews/garis-pagination.png);
+    background-size: 2px;
+    background-repeat: repeat-y;
+    background-position: 96% 0;
+}
+
 .pagination {
     display: flex;
     margin-bottom: 5px;
@@ -54,17 +61,10 @@
 .pagination .swiper-pagination-bullet {
     align-self: center;
     background: white;
+    opacity: 100%;
 }
 
 .pagination .swiper-pagination-bullet-active {
     height: 20px;
     border-radius: 6px;
-}
-
-/*tolong pas-in garis ini dong kalo isi kontennya udah ada*/
-.sec2 .swiper-line {
-    border-left: 2px solid white;
-    height: 400px;
-    position: absolute;
-    right: 17.5%;
 }
