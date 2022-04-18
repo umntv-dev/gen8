@@ -8,24 +8,24 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-6 img-crew">
-                <img src="{{ asset('images/crews/crews1.png') }}" alt="">
+                <img src="{{ asset('images/crews/Zahra.png') }}" alt="">
             </div>
             <div class="col-lg-6 img-crew">
-                <img src="{{ asset('images/crews/crews1.png') }}" alt="">
+                <img src="{{ asset('images/crews/Anastasia.png') }}" alt="">
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-lg-3 img-crew">
-                <img src="{{ asset('images/crews/crews1.png') }}" alt="">
+                <img src="{{ asset('images/crews/Ariella.png') }}" alt="">
             </div>
             <div class="col-lg-3 img-crew">
-                <img src="{{ asset('images/crews/crews1.png') }}" alt="">
+                <img src="{{ asset('images/crews/Tannayu.png') }}" alt="">
             </div>
             <div class="col-lg-3 img-crew">
-                <img src="{{ asset('images/crews/crews1.png') }}" alt="">
+                <img src="{{ asset('images/crews/Deanata.png') }}" alt="">
             </div>
             <div class="col-lg-3 img-crew">
-                <img src="{{ asset('images/crews/crews1.png') }}" alt="">
+                <img src="{{ asset('images/crews/JessicaGracia.png') }}" alt="">
             </div>
         </div>
     </div>
@@ -36,24 +36,72 @@
             <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <p class="nama-crew">
-                            Feliciano <br>
-                            Raph <br>
-                            Dea <br>
-                            Ito <br>
-                            Joen
+                    <h1 class="title-crew mb-4">Publication</h1>
+                    <div class="col-lg-5">
+                        <p class="nama-crew mt-4">
+                        Cindy<br>
+                        Verllencia<br>
+                        Kania Ivanka Ardania<br>
+                        Tirza RephaelicaFina Valentina<br>
+                        William Louwi<br>
+                        Aurelia<br>
                         </p>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="{{ asset('images/crews/crews1.png') }}">
+                    <div class="col-lg-5">
+                        <img src="{{ asset('images/crews/Vanessa.png') }}">
                     </div>
                 </div>
-
             </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">
+                <div class="row">
+                    <h1 class="title-crew mb-4">Marketing</h1>
+                    <div class="col-lg-5">
+                        <p class="nama-crew mt-4">
+                        Sheren Gho<br>
+                        Patrick<br>
+                        Dyna Muliana Tjahyadi<br>
+                        Clara Amelia<br>
+                        Alma Maulidiana<br>
+                        </p>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="{{ asset('images/crews/Aliza.png') }}">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row">
+                    <h1 class="title-crew mb-4">Human Resource Development</h1>
+                    <div class="col-lg-5">
+                        <p class="nama-crew mt-4">
+                        Cayaning Yoska<br>
+                        Pricilla Brenda<br> 
+                        Galih Aulia Orlanda Aditomo<br>
+                        Robbi Agung Surya Nugraha Ronie<br>
+                        Angeline Lumbangaol<br>
+                        Selma Sekar Seto<br>
+                        </p>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="{{ asset('images/crews/Nehamia.png') }}">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row">
+                    <h1 class="title-crew mb-4">Technical</h1>
+                    <div class="col-lg-5">
+                        <p class="nama-crew mt-5">
+                        Tamara Puspita Dewi<br>
+                        Nadia Noor Shabrina<br>
+                        Muhammad Haekal Atthariq Hossaien<br>
+                        </p>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="{{ asset('images/crews/Jason.png') }}">
+                    </div>
+                </div>
+            </div>
             <div class="swiper-slide">Slide 5</div>
             <div class="swiper-slide">Slide 6</div>
             <div class="swiper-slide">Slide 7</div>
