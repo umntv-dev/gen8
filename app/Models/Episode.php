@@ -15,7 +15,7 @@ class Episode extends Model
         'episode',
         'judul',
         'id_season',
-        'sipnosis',
+        'sinopsis',
         'image',
         'link'  
     ];

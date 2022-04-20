@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ProgramController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,20 +15,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('page.home');
-});
+// Route::get('/program', function () {
+//     return view('page.program');
+// });
 
-Route::get('/program', function () {
-    return view('page.program');
-});
-
-Route::get('/playvideo', function () {
-    return view('page.playvideo');
-});
 
 Route::get('/article', [ArticleController::class,  'index']);
 
+
+Route::get('/',[ProgramController::class, 'index']);
+Route::get('/program/{nama}', [ProgramController::class, 'detail']);
+Route::get('/program/video/{nama}/{embed}', [ProgramController::class, 'playvideo']);
 
 Route::get('/article/detail/{article:id}', [ArticleController::class,  'detail']);
 

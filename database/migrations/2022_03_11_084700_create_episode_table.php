@@ -19,7 +19,7 @@ class CreateEpisodeTable extends Migration
             $table->integer('episode');
             $table->string('judul');
             $table->unsignedBigInteger('id_season');
-            $table->longText('sipnosis');
+            $table->longText('sinopsis');
             $table->string('image');
             $table->string('link');
             $table->timestamps();

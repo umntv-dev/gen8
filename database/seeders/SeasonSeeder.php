@@ -18,9 +18,6 @@ class SeasonSeeder extends Seeder
             [
                 'nama' => 'Season 1'
             ],
-            [
-                'nama' => 'Season 2'
-            ]
         ];
         foreach($seasons as $season => $value){
             Season::create($value);

@@ -2,7 +2,7 @@
     <nav class="p-5 navbar navbar-expand-md navbar-fixed-top">
         <div class="w-100 row">
             <div class="d-flex col-lg-2 align-items-center justify-content-lg-center">
-                <a href="">
+                <a href="/">
                     <img src="{{ asset('images/logo/logo-putih.png') }}" alt="logo" width="150">
                 </a>
             </div>

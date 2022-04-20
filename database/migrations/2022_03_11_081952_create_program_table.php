@@ -17,9 +17,9 @@ class CreateProgramTable extends Migration
             $table->id();
             $table->string('nama');
             $table->unsignedBigInteger('id_divisi');
-            $table->string('desc_highlight');
+            $table->longText('desc_highlight');
             $table->longText('description');
-            $table->string('day');
+            $table->enum('day',['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']);
             $table->time('time');
             $table->string('image');
             $table->timestamps();

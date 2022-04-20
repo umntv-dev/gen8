@@ -7,91 +7,49 @@
 @section('content')
 <div class="container">
     <div class="videowrapper">
-        <iframe src="https://www.youtube.com/embed/Hqq3uLjMOEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="videoplayer" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/{{ $episode->link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="videoplayer" allowfullscreen></iframe>
     </div>
     <div class="details">
         <div class="title">
-            <h3>Episode 1</h3>
-            <h1>Jajanan Khas Nusantara yang Bisa Kamu Temui di Pasar!</h1>
-            <p>Hallo, Taruna!!
-
-                Pada episode pertama di season 2 ini, Chelsea mengajak Taruna untuk menjelajahi wilayah Nusantara melalui jajanan tradisional yang bisa taruna temukan di pasar. Selain kaya akan rasa, jajanan-jajanan tersebut juga kaya akan sejarah dan cerita yang unik. Yuk, makan bareng Chelsea sambil kita ulik satu-satu cerita unik dibalik setiap jajanan!</p>
+          @if($episode->episode == 1)
+            <h3>Pilot Episode</h3>
+          @else
+            <h3>Episode {{ $episode->episode -1 }}</h3>
+          @endif
+            <h1>{{ $episode->judul }}</h1>
+            <p>{{ $episode->sinopsis }}</p>
         </div>
     </div>
 </div>
 
 <div class="sec2 mb-5">
     <div class="container">
+      @foreach($season as $data)
         <div class="season">
-            <h1>Season 1</h1>
+            <h1>{{ $data->nama }}</h1>
         </div><hr>
 
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
-                      <h2 class="detail-program text-center">Episode 1</h2>
+              @php
+              $i = 0;
+              @endphp
+                @foreach($program->episode as $episode)
+                @if($data->id == $episode->id_season)
+                <div class="swiper-slide p-5">
+                <a href="/program/video/{{$episode->link}}">
+                      <img src="{{ asset('images/Thumbnail/' . $episode->image) }}" width="500" alt="">
+                      <h5 class="detail-program text-center mt-3">{{ $episode->judul }}</h5>
                    </a>
                 </div>
-                <div class="swiper-slide">
-                    <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
-                      <h2 class="detail-program text-center">Episode 1</h2>
-                   </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
-                      <h2 class="detail-program text-center">Episode 1</h2>
-                   </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
-                      <h2 class="detail-program text-center">Episode 1</h2>
-                   </a>
-                </div>
+                @endif
+                @php $i++ @endphp
+                @endforeach
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
-
-
-          <div class="season">
-            <h1>Season 2</h1>
-        </div><hr>
-
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
-                      <h2 class="detail-program text-center">Episode 1</h2>
-                   </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
-                      <h2 class="detail-program text-center">Episode 1</h2>
-                   </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
-                      <h2 class="detail-program text-center">Episode 1</h2>
-                   </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="/playvideo">
-                      <img src="{{ asset('images/program/video1.png') }}" class="mw-100">
-                      <h2 class="detail-program text-center">Episode 1</h2>
-                   </a>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
+          @endforeach
     </div>
 </div>
 
