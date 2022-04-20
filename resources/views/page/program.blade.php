@@ -113,6 +113,7 @@
       spaceBetween: 5,
       slidesPerGroup: 2,
       loop: true,
+      mousewheel: true,
       loopFillGroupWithBlank: true,
       pagination: {
         el: ".swiper-pagination",

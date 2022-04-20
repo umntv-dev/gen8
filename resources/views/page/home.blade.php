@@ -248,6 +248,7 @@
 @section('custom-js')
 <script>
     var swiper = new Swiper(".mySwiper", {
+      mousewheel: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -260,6 +261,7 @@
 
 <script>
   var swiper = new Swiper(".mySwiper2", {
+    mousewheel: true,
     effect: "coverflow",
     loop: true,
     grabCursor: true,

@@ -31,7 +31,7 @@
     </div>
 </div>
 <div class="sec2">
-    <div class="container">
+    <div class="p-2">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -104,9 +104,6 @@
             </div>
             <div class="swiper-slide">Slide 5</div>
             <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
             </div>
             <div class="swiper-pagination"></div>
         </div> 
@@ -126,8 +123,8 @@
         el: '.swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
-            var divisi = ['Crew 1', 'Crew 2', 'Crew 3', 'Crew 4', 'Crew 5', 'Crew 6', 'Crew 7', 'Crew 8', 'Crew 9'];
-            return '<div class="pagination"><p>' + divisi[index] + '</p><span class="' + className + '"></span></div>';
+            var divisi = ['Publication', 'Marketing', 'HRD', 'Technical', 'IT&Web', 'Redaction'];
+            return '<div class="pagination"><p class="text-end text-white">' + divisi[index] + '</p><span class="' + className + '"></span></div>';
         }
     }
 });

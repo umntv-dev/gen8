@@ -51,12 +51,14 @@
 
 .pagination {
     display: flex;
-    margin-bottom: 5px;
+    margin: 25px 0;
 }
 
 .pagination p {
     margin: 0 10px;
     align-self: center;
+    font-family: montserrat;
+    min-width: 89px;
 }
 
 .pagination .swiper-pagination-bullet {
@@ -66,7 +68,7 @@
 }
 
 .pagination .swiper-pagination-bullet-active {
-    height: 20px;
+    height: 30px;
     border-radius: 6px;
 }
 

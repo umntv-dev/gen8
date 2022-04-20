@@ -39,6 +39,9 @@
     align-items: center;
   }
 
+  .s1 img{
+    max-width: 500px;
+  }
   .s2{
     background-position: center;
     background-size: cover;
