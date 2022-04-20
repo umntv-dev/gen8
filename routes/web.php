@@ -25,7 +25,7 @@ Route::get('/playvideo', function () {
 Route::get('/article', [ArticleController::class,  'index']);
 
 
-Route::get('/article/detail/{article:judul}', [ArticleController::class,  'detail']);
+Route::get('/article/detail/{article:id}', [ArticleController::class,  'detail']);
 
 Route::get('/crews', function () {
     return view('page.crews');
