@@ -19,6 +19,17 @@ use Illuminate\Support\Facades\Route;
 //     return view('page.program');
 // });
 
+Route::get('/admin', function () {
+    return view('admin.admin');
+});
+
+Route::get('/admin/program', function () {
+    return view('admin.program');
+});
+
+Route::get('/admin/article', function () {
+    return view('admin.article');
+});
 
 Route::get('/article', [ArticleController::class,  'index']);
 

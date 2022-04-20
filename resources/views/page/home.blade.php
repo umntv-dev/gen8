@@ -66,7 +66,6 @@
 @section('custom-js')
 <script>
     var swiper = new Swiper(".mySwiper", {
-      mousewheel: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
