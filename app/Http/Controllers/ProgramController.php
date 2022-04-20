@@ -14,10 +14,12 @@ class ProgramController extends Controller
     public function index(){
         $now = Carbon::now();
         $data = explode('T', $now);
+        dd($data);
         $datetime = $data[0];
         $data1 = explode(' ',$datetime);
         $date = $data1[0];
         $day = Carbon::createFromFormat('Y-m-d', $date)->format('l');
+
 
         $highlight = Program::where('day',$day)->get();
         
