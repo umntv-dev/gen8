@@ -1,4 +1,8 @@
-@extends('template.app') @section('content')
+@extends('template.app') 
+@section('custom-css')
+<link rel="stylesheet" href="{{ asset('css/page/articledetail.css') }}">
+@endsection
+@section('content')
 <div class="articleDetail container">
     <div class="information">
         <h6>{{ $article->divisi->nama }}</h6>
