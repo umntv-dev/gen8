@@ -2,6 +2,7 @@
 @section('custom-css')
 <link rel="stylesheet" href="{{ asset('css/page/about.css') }}">
 @endsection
+
 @section('content')
 <div class="about-section1">
     <div class="container col-10">
@@ -57,22 +58,44 @@
 
 <div class="about-section4">
     <div class="col-10 container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>
-                    Documentation
-                </h1>
-                <div class="about-line"></div>
+        <div class = "sec-doc mb-4">
+            <h2>Documentation</h2>
+            <hr style="height: 2px; opacity: 100%" />
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide s1">
+                    <div class="row>
+                        <div class="col-lg-4 col-sm-6 col-xs-12">
+                            <img src="{{ asset('images/about/doc1.png') }}" class="img-about">
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-xs-12">
+                            <img src="{{ asset('images/about/doc1.png') }}" class="img-about">
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-xs-12">
+                            <img src="{{ asset('images/about/doc1.png') }}" class="img-about">
+                        </div>     
+                    </div>
+                </div>
             </div>
-            <div class="col-md-12">
-                <div class="col-md-3">   
-                </div>
-                <div class="col-md-3">   
-                </div>
-                <div class="col-md-3">   
-                </div>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
 </div>
+@endsection
+
+@section('custom-js')
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      mousewheel: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 2000,
+        },
+    });
+</script>
 @endsection
