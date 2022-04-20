@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,13 +26,10 @@ Route::get('/playvideo', function () {
     return view('page.playvideo');
 });
 
-Route::get('/article', function () {
-    return view('page.article');
-});
+Route::get('/article', [ArticleController::class,  'index']);
 
-Route::get('/article/detail', function () {
-    return view('page.articledetail');
-});
+
+Route::get('/article/detail/{article:id}', [ArticleController::class,  'detail']);
 
 Route::get('/crews', function () {
     return view('page.crews');
@@ -41,16 +39,14 @@ Route::get('/about', function () {
     return view('page.about');
 });
 
+// Auth::routes();
 
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

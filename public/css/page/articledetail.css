@@ -35,6 +35,7 @@
     border-radius: 5px;
     padding-top: 30%;
     padding-bottom: 8px;
+    height: 100%;
 }
 
 .articleDetail .recommended .description p {
