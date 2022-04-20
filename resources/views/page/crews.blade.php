@@ -102,8 +102,33 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">
+                <div class="row">
+                    <h1 class="title-crew mb-4">IT & Web</h1>
+                    <div class="col-lg-5">
+                        <p class="nama-crew mt-5">
+                        Dea Noveriyanti <br>
+                        Feliciano Surya Marcello<br>
+                        Raphael Gregorius Hakim<br>
+                        Christophorus Augusta Wangsa<br>
+                        </p>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="{{ asset('images/crews/Joanne.png') }}">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row">
+                        <h1 class="title-crew mb-4">Redaction</h1>
+                        <div class="col-lg-5">
+                            <img src="{{ asset('images/crews/Adeline.png') }}">
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="{{ asset('images/crews/Ferdinand.png') }}">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="swiper-pagination"></div>
         </div> 
