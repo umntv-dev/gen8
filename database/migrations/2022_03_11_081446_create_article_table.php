@@ -16,6 +16,7 @@ class CreateArticleTable extends Migration
         Schema::create('article', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
+            $table->string('slug');
             $table->unsignedBigInteger('id_crews');
             $table->unsignedBigInteger('id_divisi');
             $table->dateTime('waktu');

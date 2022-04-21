@@ -41,7 +41,7 @@ Route::get('/',[ProgramController::class, 'index']);
 Route::get('/program/{nama}', [ProgramController::class, 'detail']);
 Route::get('/program/video/{nama}/{embed}', [ProgramController::class, 'playvideo']);
 
-Route::get('/article/detail/{article:id}', [ArticleController::class,  'detail']);
+Route::get('/article/detail/{article:slug}', [ArticleController::class,  'detail']);
 
 Route::get('/crews', function () {
     return view('page.crews');

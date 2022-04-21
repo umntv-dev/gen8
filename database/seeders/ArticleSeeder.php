@@ -17,6 +17,7 @@ class ArticleSeeder extends Seeder
         $articles = [
             [
                 'judul' => 'Kemana aja mereka?',
+                'slug' => 'kemana-aja-mereka',
                 'id_crews' => 2,
                 'id_divisi' => 2,
                 'waktu' => '2022-10-20 10:00:00',
@@ -25,6 +26,7 @@ class ArticleSeeder extends Seeder
             ],
             [
                 'judul' => 'Manfaat Meminum Coklat Panas Untuk Kesehatan Tubuh',
+                'slug' => 'manfaat-meminum-coklat-panas-untuk-kesehatan-tubuh',
                 'id_crews' => 7,
                 'id_divisi' => 5,
                 'waktu' => '2022-10-18 18:00:00',
@@ -33,6 +35,7 @@ class ArticleSeeder extends Seeder
             ],
             [
                 'judul' => 'Amerika Sedang Perang Dengan Rusia',
+                'slug' => 'amerika-sedang-perang-dengan-rusia',
                 'id_crews' => 3,
                 'id_divisi' => 5,
                 'waktu' => '2022-10-29 17:00:00',
@@ -41,6 +44,7 @@ class ArticleSeeder extends Seeder
             ],
             [
                 'judul' => 'Tidak Pernah Sakit Hati',
+                'slug' => 'tidak-pernah-sakit-hati',
                 'id_crews' => 5,
                 'id_divisi' => 4,
                 'waktu' => '2022-10-10 14:00:00',

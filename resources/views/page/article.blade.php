@@ -5,7 +5,7 @@
 @section('content')
 <div class="article">
     <div class="container">
-        <div class="highlight" onclick="window.location='/article/detail/{{ $highlight->id }}'">
+        <div class="highlight" onclick="window.location='/article/detail/{{ $highlight->slug }}'">
             <div class="background"></div>
             <div class="box">
                 <p>{{ $highlight->divisi->nama }}</p>
@@ -22,7 +22,7 @@
             <div class="row m-1">
                 <!-- div thumbnail-wrapper udah ready buat foreach() -->
                 @foreach($article as $key => $value)
-                <div class="thumbnail-wrapper col-md-4 p-1" onclick="window.location='/article/detail/{{ $value->id }}'">
+                <div class="thumbnail-wrapper col-md-4 p-1" onclick="window.location='/article/detail/{{ $value->slug }}'">
                     <div class="thumbnail">
                         <div class="description px-3">
                             <p>{{ $value->divisi->nama }}</p>

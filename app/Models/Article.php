@@ -12,6 +12,7 @@ class Article extends Model
     protected $table = 'article';
     protected $fillable = [
         'judul',
+        'slug',
         'id_crews',
         'id_divisi',
         'waktu',
