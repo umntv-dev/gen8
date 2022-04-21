@@ -26,6 +26,9 @@ Route::get('/admin', function () {
 Route::get('/admin/program', function () {
     return view('admin.program');
 });
+Route::get('/admin/addprogram', function () {
+    return view('admin.addprogram');
+});
 
 Route::get('/admin/article', function () {
     return view('admin.article');

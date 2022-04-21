@@ -4,13 +4,17 @@
 @endsection
 @section('content')
 <div class="container">
-    <h1 class=" admin text-center text-white">Halo ADMIN</h1>
-    <div class="row">
+    <h1 class=" admin text-center text-white">Admin Page</h1>
+    <div class="row text-center">
         <div class="col-6 title">
-            <a href="/admin/program"><div class="kotak"> PROGRAM</div></a>
+            <a href="/admin/program">
+                <img src="{{ asset('images/admin/program.png') }}" />
+            </a>
         </div>
         <div class="col-6 title">
-            <a href="/admin/article"><div class="kotak"> ARTICLE</div></a>
+            <a href="/admin/article">
+                <img src="{{ asset('images/admin/article.png') }}" />
+            </a>
         </div>
     </div>
 </div>

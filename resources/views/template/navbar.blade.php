@@ -13,7 +13,7 @@
                 <a href="/about" class="px-4 fs-5">ABOUT</a>
             </div>
             <div class="d-lg-flex d-none col-lg-2 align-items-center justify-content-center">
-                <a href="https://tv.umn.ac.id/onair" class="fs-5">TVON AIR 7.0</a>
+                <a href="https://tv.umn.ac.id/onair" class="fs-5">TVONAIR 7.0</a>
             </div>
         </div>
     </nav>
