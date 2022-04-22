@@ -10,20 +10,23 @@
         <thead>
             <tr>
                 <th>Nama Program</th>
-                <th>Deskipsi Program</th>
-                <th>Sinopsis Program</th>
-                <th>Jam Tayang</th>
                 <th>Divisi</th>
+                <th>Description</th>
+                <th>Hari</th>
+                <th>Waktu</th>
+                <th>Image</th>
                 <th>Episode</th>
                 <th>Operation</th>
             </tr>
         </thead>
+        @foreach($programs as $program)
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>            
-            <td></td>
-            <td></td>
+            <td>{{ $program->nama }}</td>
+            <td>{{ $program->divisi->nama }}</td>
+            <td>{{ $program->description }}</td>            
+            <td>{{ $program->day }}</td>
+            <td>{{ $program->time }}</td>
+            <td><img src="{{ asset('images/program/' . $program->image) }}" width="100"></td>
             <td>
                 <button>Episode</button>
             </td>
@@ -37,6 +40,7 @@
                 </a>
             </td>
         </tr>
+        @endforeach
     </table>
     {{-- <h1>Episode</h1>
 	<table class="table p-5 box text-center">

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ProgramController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,9 +24,6 @@ Route::get('/admin', function () {
     return view('admin.admin');
 });
 
-Route::get('/admin/program', function () {
-    return view('admin.program');
-});
 Route::get('/admin/addprogram', function () {
     return view('admin.addprogram');
 });
@@ -33,6 +31,8 @@ Route::get('/admin/addprogram', function () {
 Route::get('/admin/article', function () {
     return view('admin.article');
 });
+
+Route::get('/admin/program', [AdminController::class, 'showProgram']);
 
 Route::get('/article', [ArticleController::class,  'index']);
 
