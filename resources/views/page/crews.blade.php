@@ -42,7 +42,8 @@
                         Cindy<br>
                         Verllencia<br>
                         Kania Ivanka Ardania<br>
-                        Tirza RephaelicaFina Valentina<br>
+                        Tirza Rephaelica<br>
+                        Fina Valentina<br>
                         William Louwi<br>
                         Aurelia<br>
                         </p>
@@ -56,12 +57,19 @@
                 <div class="row">
                     <h1 class="title-crew mb-4">Marketing</h1>
                     <div class="col-lg-5">
-                        <p class="nama-crew mt-4">
-                        Sheren Gho<br>
-                        Patrick<br>
-                        Dyna Muliana Tjahyadi<br>
-                        Clara Amelia<br>
-                        Alma Maulidiana<br>
+                        <p class="nama-crew-redaksi mt-4">
+                            Sheren Gho <br>
+                            Patrick<br>
+                            Dyna Muliana Tjahyadi<br>
+                            Clara Amelia<br>
+                            Alma Maulidiana<br>
+                            Marissa Amran<br>
+                            Zahra Triandita<br>
+                            Rika Oktavia<br>
+                            Marco Gunawan<br>
+                            Gabriella<br>
+                            Christabella Chika Wijaya<br>
+                            Elisabeth Dian Kurnia Putri<br>
                         </p>
                     </div>
                     <div class="col-lg-5">
@@ -118,17 +126,107 @@
                     </div>
                 </div>
             </div>
+
             <div class="swiper-slide">
                 <div class="row">
-                        <h1 class="title-crew mb-4">Redaction</h1>
-                        <div class="col-lg-5">
-                            <img src="{{ asset('images/crews/Adeline.png') }}">
+                    <h1 class="title-crew ">Redaction</h1>
+                    <h3 class="text-white mb-4">NEWS</h3>
+                    <div class="col-lg-6">
+                        <div class="row ms-5">
+                            <div class="col-6">
+                                <p class="nama-crew-redaksi mt-5 text-start">
+                                    Vicky Fiona Susanto <br>
+                                    Cantya Kirana Dewi<br>
+                                    Vanessa Benedicta<br>
+                                    Fiebe Virginia<br>
+                                    Angela Wenda Oktavianti<br>
+                                    Anindita Purwania Damayanti<br>
+                                    Sherlina Purnamasari<br>
+                                    Fakhira Nurul Ramadhani<br>
+                                    Kelly Stefany<br>
+                                </p>  
+                            </div>
+                            <div class="col-6">
+                                <p class="nama-crew-redaksi mt-5 text-start">
+                                    Ivana Marshintauli Devi Hutapea<br>
+                                    Whitney Karnisa<br>
+                                    Fitria Andhika<br>
+                                    Gabriela Yessica Hardani<br>
+                                    Carla Evania Fernandes <br>
+                                    Muhammad Afiq Walid<br>
+                                    Salma Permata Dewi<br>
+                                    </p>
+                            </div>
+                            </div>
                         </div>
-                        <div class="col-lg-5">
-                            <img src="{{ asset('images/crews/Ferdinand.png') }}">
-                        </div>
+                    <div class="col-lg-4 text-end">
+                        <img src="{{ asset('images/crews/Adeline.png') }} " class="foto-crew">
+                        <img src="{{ asset('images/crews/Ferdinand.png') }}"class="foto-crew">
                     </div>
                 </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row">
+                    <h1 class="title-crew ">Redaction</h1>
+                    <h3 class="text-white mb-4">PROGRAM</h3>
+                    <div class="col-lg-6">
+                        <div class="row ms-5">
+                            <div class="col-6">
+                                <p class="nama-crew-redaksi mt-5 text-center">
+                                    Satrya Bima Pramudatama <br>
+                                    Grace Vilia<br>
+                                    Rava Shabrina Wiryawan<br>
+                                    Ketut Sakti Andika<br>
+                                    Naila Medita<br>
+                                    Angelica<br>
+                                    Felicitas Yudith Donatirsa L  <br>
+                                </p>  
+                            </div>
+                            <div class="col-6">
+                                <p class="nama-crew-redaksi mt-5 text-center">
+                                    Christina Cindy Saputra<br>
+                                    Betari Naratayaka<br>
+                                    Sinta Makdalena<br>
+                                    Jennifer Abigail<br>
+                                    Gabriella Ursula Thendean<br>
+                                    Evelyn Ivana Anggi Nabasa<br>
+                                    Victoria glory<br>
+                                    </p>
+                            </div>
+                            </div>
+                        </div>
+                    <div class="col-lg-4 text-end">
+                        <img src="{{ asset('images/crews/Adeline.png') }} " class="foto-crew">
+                        <img src="{{ asset('images/crews/Ferdinand.png') }}"class="foto-crew">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row">
+                    <h1 class="title-crew ">Redaction</h1>
+                    <h3 class="text-white mb-4">Creative Content Production</h3>
+                    <div class="col-lg-5">
+                        <p class="nama-crew mt-5 text-center">
+                            Elora Shaloomita Sianto <br>
+                            Angelina Priska Alfionita<br>
+                            Arista Amelinda<br>
+                            Nurul Fadilah<br>
+                            Ghina Hanifah<br>
+                            Muhammad Fathi Mudzakir<br>
+                            kelvin triantovel<br>
+                            Jennifer Landau<br>
+                            Vanca Angela Silagarki<br>
+                        </p>  
+                        </div>
+                    <div class="col-lg-5 text-center">
+                        <img src="{{ asset('images/crews/Adeline.png') }} " class="foto-crew">
+                        <img src="{{ asset('images/crews/Ferdinand.png') }}"class="foto-crew">
+                    </div>
+                </div>
+            </div>
+
+
+
             </div>
             <div class="swiper-pagination"></div>
         </div> 

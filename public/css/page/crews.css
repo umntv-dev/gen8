@@ -42,6 +42,14 @@
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
 }
 
+.nama-crew-redaksi {
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
 .swiper-pagination {
     background-image: url(../../images/crews/garis-pagination.png);
     background-size: 2px;
@@ -78,4 +86,8 @@
     text-align: center;
     font-size: 4rem;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.foto-crew{
+    max-width: 430px;
 }
