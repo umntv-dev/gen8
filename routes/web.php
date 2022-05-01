@@ -28,20 +28,16 @@ Route::get('/admin/addprogram', function () {
     return view('admin.addprogram');
 });
 
-Route::get('/admin/article', function () {
-    return view('admin.article');
-});
+Route::get('/admin/article', [AdminController::class, 'article']);
 
 Route::get('/admin/program', [AdminController::class, 'showProgram']);
 
 Route::get('/article', [ArticleController::class,  'index']);
-
+Route::get('/article/detail/{article:slug}', [ArticleController::class,  'detail']);
 
 Route::get('/',[ProgramController::class, 'index']);
 Route::get('/program/{nama}', [ProgramController::class, 'detail']);
 Route::get('/program/video/{nama}/{embed}', [ProgramController::class, 'playvideo']);
-
-Route::get('/article/detail/{article:slug}', [ArticleController::class,  'detail']);
 
 Route::get('/crews', function () {
     return view('page.crews');
