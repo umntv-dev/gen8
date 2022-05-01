@@ -27,7 +27,7 @@ class ProgramSeeder extends Seeder
             [
                 'nama' => 'PEPOX',
                 'id_divisi' => 6,
-                'desc_highlight' => 'Wadah kalian berdiskusi tentang apa pun. Apakah timun adalah buah atau sayur? Apakah kamu tim bubur diaduk? Kalau iya kenapa? Kami mengundang banyak orang dari berbagai latar belakang untuk berpendapat tentang opini yang kalian punya tentang berbagai topik. Jadi, mari berdiskusi!',
+                'desc_highlight' => 'Wadah kalian berdiskusi tentang apa pun. Kami mengundang banyak orang dari berbagai latar belakang untuk berpendapat tentang opini yang kalian punya tentang berbagai topik. Jadi, mari berdiskusi!',
                 'description' => 'Halo Ultimates! PEPOX menghadirkan tayangan yang tentunya akan membuat pikiran kalian lebih terbuka lagi, serta mengetahui gimana sih sudut pandang dari orang lain? Banyak banget hal/topik yang akan kita bahas nanti nya seperti, Kamu tim bubur diaduk atau tidak diaduk? First date lebih baik dijemput atau tidak dijemput? Dan masih banyak lagi topik menarik lainnya. Jadi Ultimates, tungguin yaa PEPOX setiap selasa pukul 19.00 WIB hanya di kanal Youtube UMNTV.', 
                 'day' => 'Tuesday',
                 'time' => '19:00:00',
