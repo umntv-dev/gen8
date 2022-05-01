@@ -7,6 +7,11 @@
 @section('content')
 <div class="sec1">
       <div class="container">
+        @if($count == 0)
+          <div class="d-flex h-100 justify-content-center align-items-center">
+            <h1>Tidak Ada Program Hari Ini!</h1>
+          </div>
+        @else
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               @foreach($highlights as $highlight)
@@ -34,6 +39,7 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
+        @endif
     </div>
 </div>
 

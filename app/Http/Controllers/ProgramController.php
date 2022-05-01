@@ -21,12 +21,15 @@ class ProgramController extends Controller
 
 
         $highlight = Program::where('day',$day)->get();
-        
+        $count = count($highlight);
+
+
         $program = Program::get();
 
         return view('page.home',[
             'highlights' => $highlight,
-            'programs' => $program
+            'programs' => $program,
+            'count' => $count
         ]);
     }
 
