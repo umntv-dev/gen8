@@ -13,7 +13,7 @@
                 <div class="swiper-slide s1">
                   <div class="row">
                     <div class="col-lg-6">
-                      <img src="{{ asset('images/program/' . $highlight->image) }}" class="img-program">
+                      <img src="{{ asset('storage/Images/Program/' . $highlight->image) }}" class="img-program">
                     </div>
                     <div class="col-lg-6 d-flex flex-column justify-content-center">
                       <h1 class="title-program">{{ $highlight->nama }}</h1>
@@ -47,7 +47,7 @@
         @foreach($programs as $program)
           <div class="swiper-slide s2">
             <figure class="hover-img">
-              <img src="{{ asset('images/program/' . $program->image) }}" alt="">
+              <img src="{{ asset('storage/Images/Program/' . $program->image) }}" alt="">
               <figcaption onclick="window.location='/program/{{ $program->nama }}'">
                 <div><h2>{{ $program->nama }}</h2></div>
                  <div><p>{{ $program->desc_highlight }}</p></div>

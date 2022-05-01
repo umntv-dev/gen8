@@ -11,10 +11,10 @@
     </div>
     <div class="details">
         <div class="title">
-          @if($episode->episode == 1)
+          @if($episode->episode == 0)
             <h3>Pilot Episode</h3>
           @else
-            <h3>Episode {{ $episode->episode -1 }}</h3>
+            <h3>Episode {{ $episode->episode }}</h3>
           @endif
             <h1>{{ $episode->judul }}</h1>
             <p>{{ $episode->sinopsis }}</p>
@@ -31,19 +31,15 @@
 
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              @php
-              $i = 0;
-              @endphp
                 @foreach($program->episode as $episode)
                 @if($data->id == $episode->id_season)
                 <div class="swiper-slide p-5">
-                <a href="/program/video/{{$episode->link}}">
-                      <img src="{{ asset('images/Thumbnail/' . $episode->image) }}" width="500" alt="">
+                <a href="/program/video/{{ $program->nama }}/{{$episode->link}}">
+                      <img src="{{ asset('storage/Images/Thumbnail/' . $episode->image) }}" width="500" alt="">
                       <h5 class="detail-program text-center mt-3">{{ $episode->judul }}</h5>
                    </a>
                 </div>
                 @endif
-                @php $i++ @endphp
                 @endforeach
             </div>
             <div class="swiper-button-next"></div>

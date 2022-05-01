@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col-lg-6 kotak-img">
-              <img src="{{ asset('images/program/' . $program->image) }}" class="img-program">
+              <img src="{{ asset('storage/Images/Program/' . $program->image) }}" class="img-program">
             </div>
             <div class="col-lg-6">
               <h1 class="title-program">{{ $program->nama }}</h1>
@@ -48,7 +48,7 @@
               @if($data->id == $episode->id_season)
                 <div class="swiper-slide p-5">
                     <a href="/program/video/{{$program->nama}}/{{$episode->link}}">
-                      <img src="{{ asset('images/Thumbnail/' . $episode->image) }}" width="500" alt="">
+                      <img src="{{ asset('storage/Images/Thumbnail/' . $episode->image) }}" width="500" alt="">
                       <h2 class="detail-program text-center mt-3">{{ $episode->judul }}</h2>
                       <!-- @if($i == 0)
                       <h2 class="detail-program text-center">Pilot Episode</h2>

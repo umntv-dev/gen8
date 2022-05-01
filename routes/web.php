@@ -3,6 +3,7 @@
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\EpisodeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,17 +21,31 @@ use Illuminate\Support\Facades\Route;
 //     return view('page.program');
 // });
 
-Route::get('/admin', function () {
-    return view('admin.admin');
+Auth::routes(['verify' => true]);
+
+Route::get('/home',function(){
+    return view('home');
 });
 
-Route::get('/admin/addprogram', function () {
-    return view('admin.addprogram');
-});
+Route::get('/admin', function () {
+    return view('admin.admin');
+})->middleware('auth');
 
 Route::get('/admin/article', [AdminController::class, 'article']);
 
 Route::get('/admin/program', [AdminController::class, 'showProgram']);
+Route::get('/admin/addprogram',[AdminController::class,'addProgram']);
+Route::get('admin/program/{idProgram}',[AdminController::class,'editProgram']);
+Route::post('admin/program/add',[AdminController::class,'createProgram']);
+Route::post('admin/program/update',[AdminController::class,'updateProgram']);
+Route::get('admin/program/delete/{idProgram}',[AdminController::class,'deleteProgram']);
+
+Route::get('admin/program/episode/{idProgram}',[EpisodeController::class,'index']);
+Route::get('admin/program/episode/{idProgram}/addepisode',[EpisodeController::class,'addEpisode']);
+Route::get('admin/program/episode/{idProgram}/edit/{idepisode}',[EpisodeController::class,'editEpisode']);
+Route::post('admin/program/episode/add',[EpisodeController::class,'createEpisode']);
+Route::post('admin/program/episode/update',[EpisodeController::class,'updateEpisode']);
+Route::get('admin/program/episode/{idProgram}/delete/{idepisode}',[EpisodeController::class,'deleteEpisode']);
 
 Route::get('/article', [ArticleController::class,  'index']);
 Route::get('/article/detail/{article:slug}', [ArticleController::class,  'detail']);

@@ -7,6 +7,9 @@
     <!-- Page Title -->
     <title>UMN TV</title>
     <!-- UMN TV Icon -->
+    
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('css/template/app.css') }}">
@@ -24,11 +27,13 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('fontawesome/css/all.css') }}">
 
+    <!-- summernote -->
+    
     <!-- Custom CSS -->
     @yield('custom-css')
 </head>
 <body>
-
+    
     <div class="content">
         @include('template.navbar')
         @yield('content')
@@ -42,6 +47,10 @@
     <script src="{{ asset('js/cms/base/sweetalert/sweetalert.js') }}"></script>
     <!-- Swiper -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- summernote -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 
     @include('template.footer')
     <script>

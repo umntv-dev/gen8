@@ -7,6 +7,7 @@
     <h1>Program</h1>
 	<table class="table p-5 box text-center">
         <button><a href="/admin/addprogram">Add New</a> </button>
+        <button><a href="/admin">Back</a> </button>
         <thead>
             <tr>
                 <th>Nama Program</th>
@@ -26,16 +27,18 @@
             <td>{{ $program->description }}</td>            
             <td>{{ $program->day }}</td>
             <td>{{ $program->time }}</td>
-            <td><img src="{{ asset('images/program/' . $program->image) }}" width="100"></td>
+            <td><img src="{{ asset('storage/Images/Program/' . $program->image) }}" width="100"></td>
             <td>
-                <button>Episode</button>
+                <a href="{{ url('admin/program/episode/'. $program->id) }}">
+                    <button>Episode</button>
+                </a>
             </td>
             <td>
-                <a href="" class="operation">
+                <a href="{{ url('admin/program/' . $program->id) }}" class="operation">
                     <i class="fa-solid fa-pen"></i>
                 </a>
                 
-                <a href="" class="operation">
+                <a href="{{ url('admin/program/delete/' . $program->id ) }}" class="operation">
                     <i class="fa-solid fa-trash"></i>
                 </a>
             </td>
