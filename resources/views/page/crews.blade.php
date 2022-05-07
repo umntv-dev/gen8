@@ -49,7 +49,7 @@
                         </p>
                     </div>
                     <div class="col-lg-5">
-                        <img src="{{ asset('images/crews/Vanessa.png') }}">
+                        <img src="{{ asset('images/crews/Vanessa.png') }}" class="gambar-1">
                     </div>
                 </div>
             </div>
@@ -73,7 +73,7 @@
                         </p>
                     </div>
                     <div class="col-lg-5">
-                        <img src="{{ asset('images/crews/Aliza.png') }}">
+                        <img src="{{ asset('images/crews/Aliza.png') }}" class="gambar-1">
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                         </p>
                     </div>
                     <div class="col-lg-5">
-                        <img src="{{ asset('images/crews/Nehamia.png') }}">
+                        <img src="{{ asset('images/crews/Nehamia.png') }}" class="gambar-1">
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                         </p>
                     </div>
                     <div class="col-lg-5">
-                        <img src="{{ asset('images/crews/Jason.png') }}">
+                        <img src="{{ asset('images/crews/Jason.png') }}" class="gambar-1">
                     </div>
                 </div>
             </div>
@@ -122,19 +122,18 @@
                         </p>
                     </div>
                     <div class="col-lg-5">
-                        <img src="{{ asset('images/crews/Joanne.png') }}">
+                        <img src="{{ asset('images/crews/Joanne.png') }}" class="gambar-1">
                     </div>
                 </div>
             </div>
-
             <div class="swiper-slide">
                 <div class="row">
                     <h1 class="title-crew ">Redaction</h1>
                     <h3 class="text-white mb-4">NEWS</h3>
                     <div class="col-lg-6">
-                        <div class="row ms-5">
-                            <div class="col-6">
-                                <p class="nama-crew-redaksi mt-5 text-start">
+                        <div class="row ms-lg-5">
+                            <div class="col-lg-6">
+                                <p class="nama-crew-redaksi mt-lg-5 text-center">
                                     Vicky Fiona Susanto <br>
                                     Cantya Kirana Dewi<br>
                                     Vanessa Benedicta<br>
@@ -146,8 +145,8 @@
                                     Kelly Stefany<br>
                                 </p>  
                             </div>
-                            <div class="col-6">
-                                <p class="nama-crew-redaksi mt-5 text-start">
+                            <div class="col-lg-6">
+                                <p class="nama-crew-redaksi mt-lg-5 text-center">
                                     Ivana Marshintauli Devi Hutapea<br>
                                     Whitney Karnisa<br>
                                     Fitria Andhika<br>
@@ -159,7 +158,7 @@
                             </div>
                             </div>
                         </div>
-                    <div class="col-lg-4 text-end">
+                    <div class="col-lg-4 text-center">
                         <img src="{{ asset('images/crews/Adeline.png') }} " class="foto-crew">
                         <img src="{{ asset('images/crews/Ferdinand.png') }}"class="foto-crew">
                     </div>
@@ -170,9 +169,9 @@
                     <h1 class="title-crew ">Redaction</h1>
                     <h3 class="text-white mb-4">PROGRAM</h3>
                     <div class="col-lg-6">
-                        <div class="row ms-5">
-                            <div class="col-6">
-                                <p class="nama-crew-redaksi mt-5 text-center">
+                        <div class="row ms-lg-5">
+                            <div class="col-lg-6">
+                                <p class="nama-crew-redaksi mt-lg-5 text-center">
                                     Satrya Bima Pramudatama <br>
                                     Grace Vilia<br>
                                     Rava Shabrina Wiryawan<br>
@@ -182,8 +181,8 @@
                                     Felicitas Yudith Donatirsa L  <br>
                                 </p>  
                             </div>
-                            <div class="col-6">
-                                <p class="nama-crew-redaksi mt-5 text-center">
+                            <div class="col-lg-6">
+                                <p class="nama-crew-redaksi mt-lg-5 text-center">
                                     Christina Cindy Saputra<br>
                                     Betari Naratayaka<br>
                                     Sinta Makdalena<br>
@@ -195,7 +194,7 @@
                             </div>
                             </div>
                         </div>
-                    <div class="col-lg-4 text-end">
+                    <div class="col-lg-4 text-center">
                         <img src="{{ asset('images/crews/Adeline.png') }} " class="foto-crew">
                         <img src="{{ asset('images/crews/Ferdinand.png') }}"class="foto-crew">
                     </div>
@@ -206,7 +205,7 @@
                     <h1 class="title-crew ">Redaction</h1>
                     <h3 class="text-white mb-4">Creative Content Production</h3>
                     <div class="col-lg-5">
-                        <p class="nama-crew mt-5 text-center">
+                        <p class="nama-crew mt-lg-5 text-center">
                             Elora Shaloomita Sianto <br>
                             Angelina Priska Alfionita<br>
                             Arista Amelinda<br>
@@ -219,7 +218,7 @@
                         </p>  
                         </div>
                     <div class="col-lg-5 text-center">
-                        <img src="{{ asset('images/crews/Adeline.png') }} " class="foto-crew">
+                        <img src="{{ asset('images/crews/Adeline.png') }}" class="foto-crew">
                         <img src="{{ asset('images/crews/Ferdinand.png') }}"class="foto-crew">
                     </div>
                 </div>
@@ -246,7 +245,7 @@
         el: '.swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
-            var divisi = ['Publication', 'Marketing', 'HRD', 'Technical', 'IT&Web', 'Redaction'];
+            var divisi = ['Publication', 'Marketing', 'HRD', 'Technical', 'IT&Web', 'Redaction' , 'Redaction', 'Redaction'];
             return '<div class="pagination"><p class="text-end text-white">' + divisi[index] + '</p><span class="' + className + '"></span></div>';
         }
     }
