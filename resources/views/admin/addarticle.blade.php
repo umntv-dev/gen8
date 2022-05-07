@@ -14,7 +14,6 @@
     class="col-lg-8" enctype="multipart/form-data">
     @csrf
     @if(isset($article))
-    {{ $article }}
       <h1 class="text-center">Edit article</h1>
       <input type="hidden" name="id" value="{{ $article->id }}">
       @else
@@ -79,5 +78,7 @@
   $('#'+hari).attr('selected', true);
   var divisi = $("#divisi").val();
   $('#d'+divisi).attr('selected',true);
+  var crews = $("#crews").val();
+  $('#c'+crews).attr('selected',true);
 </script>
 @endsection
