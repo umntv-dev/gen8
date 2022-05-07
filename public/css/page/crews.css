@@ -54,7 +54,7 @@
     background-image: url(../../images/crews/garis-pagination.png);
     background-size: 2px;
     background-repeat: repeat-y;
-    background-position: 96% 0;
+    background-position: 97% 0;
 }
 
 .pagination {
@@ -63,10 +63,10 @@
 }
 
 .pagination p {
+    width: 90px;
     margin: 0 10px;
     align-self: center;
     font-family: montserrat;
-    min-width: 89px;
 }
 
 .pagination .swiper-pagination-bullet {
@@ -80,7 +80,7 @@
     border-radius: 6px;
 }
 
-.title-crew{
+.title-crew {
     color: white;
     font-weight: 800;
     text-align: center;
@@ -88,95 +88,94 @@
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
 }
 
-.foto-crew{
+.foto-crew {
     max-width: 430px;
 }
 
-@media (max-width:1400px){
-    .gambar-1{
+@media (max-width: 1400px) {
+    .gambar-1 {
         max-width: 600px;
     }
 }
 
-@media (max-width:1200px){
-    .gambar-1{
+@media (max-width: 1200px) {
+    .gambar-1 {
         max-width: 500px;
     }
-    .foto-crew{
+    .foto-crew {
         max-width: 380px;
     }
-    .nama-crew{
+    .nama-crew {
         font-size: 1.5rem;
     }
-    .nama-crew-redaksi{
+    .nama-crew-redaksi {
         font-size: 1.3rem;
     }
-    .title-crew{
+    .title-crew {
         font-size: 3rem;
     }
 }
 
-@media (max-width:990px){
-    .gambar-1{
+@media (max-width: 990px) {
+    .gambar-1 {
         max-width: 450px;
     }
-    .foto-crew{
+    .foto-crew {
         max-width: 350px;
     }
-    .nama-crew{
+    .nama-crew {
         font-size: 1.3rem;
     }
-    .nama-crew-redaksi{
+    .nama-crew-redaksi {
         font-size: 1rem;
     }
-    .title-crew{
+    .title-crew {
         font-size: 2.5rem;
-    }    
-    .swiper{
+    }
+    .swiper {
         max-height: 900px;
     }
 }
 
-@media (max-width:750px){
-
-    .gambar-1{
+@media (max-width: 750px) {
+    .gambar-1 {
         max-width: 430px;
     }
-    .foto-crew{
+    .foto-crew {
         max-width: 320px;
     }
-    .nama-crew{
+    .nama-crew {
         font-size: 1rem;
     }
-    .nama-crew-redaksi{
+    .nama-crew-redaksi {
         font-size: 1rem;
     }
-    .title-crew{
+    .title-crew {
         font-size: 2rem;
     }
 }
 
-@media (max-width:479px){
-
-    .gambar-1{
+@media (max-width: 479px) {
+    .gambar-1 {
         max-width: 430px;
     }
-    .foto-crew{
+    .foto-crew {
         max-width: 320px;
     }
-    .nama-crew{
+    .nama-crew {
         font-size: 1rem;
     }
-    .nama-crew-redaksi{
+    .nama-crew-redaksi {
         font-size: 1rem;
     }
-    .title-crew{
+    .title-crew {
         font-size: 2rem;
     }
-    .swiper{
+    .swiper {
         max-height: 1000px;
     }
-    .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {
+    .swiper-pagination-vertical.swiper-pagination-bullets,
+    .swiper-vertical > .swiper-pagination-bullets {
         display: none;
     }
 }

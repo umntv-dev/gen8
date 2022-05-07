@@ -20,7 +20,6 @@
             <h2>Articles</h2>
             <hr style="height: 2px; opacity: 100%" />
             <div class="row m-1">
-                <!-- div thumbnail-wrapper udah ready buat foreach() -->
                 @foreach($article as $key => $value)
                 <div class="thumbnail-wrapper col-md-4 p-1" onclick="window.location='/article/detail/{{ $value->slug }}'">
                     <div class="thumbnail">

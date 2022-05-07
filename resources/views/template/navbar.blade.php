@@ -62,13 +62,13 @@
             <div class="nav-menu py-2"><a href="/">PROGRAMS</a></div>
             <div class="nav-menu py-2"><a href="/article">ARTICLE</a></div>
             <div class="nav-menu py-2"><a href="/crews">CREWS</a></div>
-            <div class="nav-menu py-2"><a href="/abut">ABOUT</a></div>
+            <div class="nav-menu py-2"><a href="/about">ABOUT</a></div>
             <div class="nav-menu py-2"><a href="https://tv.umn.ac.id/onair">TVON AIR 7.0</a></div>
             @else
             <div class="nav-menu py-2"><a href="/">PROGRAMS</a></div>
             <div class="nav-menu py-2"><a href="/article">ARTICLE</a></div>
             <div class="nav-menu py-2"><a href="/crews">CREWS</a></div>
-            <div class="nav-menu py-2"><a href="/abut">ABOUT</a></div>
+            <div class="nav-menu py-2"><a href="/about">ABOUT</a></div>
             <div class="nav-menu py-2"><a href="https://tv.umn.ac.id/onair">TVON AIR 7.0</a></div>
             <div class="nav-menu py-2"><a href="/">HOME</a></div>
             <div class="nav-meny py-2">
