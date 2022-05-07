@@ -8,9 +8,40 @@
 <div class="sec1">
       <div class="container">
         @if($count == 0)
-          <div class="d-flex h-100 justify-content-center align-items-center">
-            <h1>Tidak Ada Program Hari Ini!</h1>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            @foreach($all as $highlight)
+              <div class="swiper-slide s1">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <img src="{{ asset('storage/Images/Program/' . $highlight->image) }}" class="img-program">
+                  </div>
+                  <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h1 class="title-program">{{ $highlight->nama }}</h1>
+                    <p class="detail-program">{{ $highlight->desc_highlight }}</p>
+                    <div class="btn-program d-flex flex-column align-items-lg-start">
+                      <p class="detail-program"><i class="fa-regular fa-clock"></i> Hari
+                        @if($highlight->day == 'Monday') Senin
+                          @elseif($highlight->day == 'Tuesday') Selasa
+                          @elseif($highlight->day == 'Wednesday') Rabu
+                          @elseif($highlight->day == 'Thursday') Kamis
+                          @elseif($highlight->day == 'Friday') Jumat
+                        @endif
+                        pukul 19:00 WIB </p>
+                      <button class="btn">
+                        <a href="/program/{{ $highlight->slug }}">
+                          <p>Selengkapnya</p>
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              @endforeach
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+      </div>
         @else
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -26,7 +57,7 @@
                       <div class="btn-program d-flex flex-column align-items-lg-start">
                         <p class="detail-program"><i class="fa-regular fa-clock"></i> Hari ini pukul 19:00 WIB </p>
                         <button class="btn">
-                          <a href="/program/{{ $highlight->nama }}">
+                          <a href="/program/{{ $highlight->slug }}">
                             <p>Selengkapnya</p>
                           </a>
                         </button>
@@ -54,7 +85,7 @@
           <div class="swiper-slide s2">
             <figure class="hover-img">
               <img src="{{ asset('storage/Images/Program/' . $program->image) }}" alt="">
-              <figcaption onclick="window.location='/program/{{ $program->nama }}'">
+              <figcaption onclick="window.location='/program/{{ $program->slug }}'">
                 <div><h2>{{ $program->nama }}</h2></div>
                  <div><p>{{ $program->desc_highlight }}</p></div>
                 <a href="#"></a>

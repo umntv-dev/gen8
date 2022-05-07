@@ -23,18 +23,19 @@ class ProgramController extends Controller
         $highlight = Program::where('day',$day)->get();
         $count = count($highlight);
 
-
+        $all = Program::get();
         $program = Program::get();
 
         return view('page.home',[
             'highlights' => $highlight,
             'programs' => $program,
-            'count' => $count
+            'count' => $count,
+            'all' => $all
         ]);
     }
 
-    public function detail($nama){
-        $program = Program::with(['divisi','episode'])->where('nama',$nama)->first();
+    public function detail($slug){
+        $program = Program::with(['divisi','episode'])->where('slug',$slug)->first();
         $episode = Episode::with(['program','season'])->where('id_program' , $program->id)->get();
         $season = Season::get();
 
@@ -45,8 +46,8 @@ class ProgramController extends Controller
         ]);
     }
 
-    public function playvideo($nama, $embed){
-        $program = Program::with(['divisi','episode'])->where('nama',$nama)->first();
+    public function playvideo($slug, $embed){
+        $program = Program::with(['divisi','episode'])->where('slug',$slug)->first();
         $episode = Episode::where('link', $embed)->first();
         $episodes = Episode::with(['program','season'])->where('id_program' , $program->id)->get();
         $season = Season::get();

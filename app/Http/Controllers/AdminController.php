@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Divisi;
+use App\Models\Program;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Validator;
-use App\Models\Program;
-use App\Models\Divisi;
 
 class AdminController extends Controller
 {
@@ -54,6 +55,7 @@ class AdminController extends Controller
 
         Program::create([
             'nama' => $request->nama,
+            'slug' => Str::slug($request->nama),
             'desc_highlight' => $request->desc_highlight,
             'description' => $request->description,
             'id_divisi' => $request->divisi,
@@ -106,6 +108,7 @@ class AdminController extends Controller
 
             $params->fill([
                 'nama' => $request->nama,
+                'slug' => Str::slug($request->nama),
                 'desc_highlight' => $request->desc_highlight,
                 'description' => $request->description,
                 'id_divisi' => $request->divisi,
@@ -116,6 +119,7 @@ class AdminController extends Controller
         }else{
             $params->fill([
                 'nama' => $request->nama,
+                'slug' => Str::slug($request->nama),
                 'desc_highlight' => $request->desc_highlight,
                 'description' => $request->description,
                 'id_divisi' => $request->divisi,

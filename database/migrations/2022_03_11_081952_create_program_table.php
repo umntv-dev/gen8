@@ -16,6 +16,7 @@ class CreateProgramTable extends Migration
         Schema::create('program', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
+            $table->string('slug');
             $table->unsignedBigInteger('id_divisi');
             $table->longText('desc_highlight');
             $table->longText('description');

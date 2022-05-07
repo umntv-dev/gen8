@@ -12,6 +12,7 @@ class Program extends Model
     protected $table = 'program';
     protected $fillable = [
         'nama',
+        'slug',
         'desc_highlight',
         'id_divisi',
         'description',
