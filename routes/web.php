@@ -31,8 +31,6 @@ Route::get('/admin', function () {
     return view('admin.admin');
 })->middleware('auth');
 
-Route::get('/admin/article', [AdminController::class, 'article']);
-
 Route::get('/admin/program', [AdminController::class, 'showProgram']);
 Route::get('/admin/addprogram',[AdminController::class,'addProgram']);
 Route::get('/admin/program/{idProgram}',[AdminController::class,'editProgram']);
@@ -47,7 +45,12 @@ Route::post('/admin/program/episode/add',[EpisodeController::class,'createEpisod
 Route::post('/admin/program/episode/update',[EpisodeController::class,'updateEpisode']);
 Route::get('/admin/program/episode/{idProgram}/delete/{idepisode}',[EpisodeController::class,'deleteEpisode']);
 
-Route::get('/admin/article', [AdminController::class, 'showArticle']);
+Route::get('/admin/article', [ArticleController::class, 'showArticle']);
+Route::get('/admin/addarticle',[ArticleController::class,'addArticle']);
+Route::get('/admin/article/{idArticle}',[ArticleController::class,'editArticle']);
+Route::post('/admin/article/add',[ArticleController::class,'createArticle']);
+Route::post('/admin/article/update',[ArticleController::class,'updateArticle']);
+Route::get('/admin/article/delete/{idArticle}',[ArticleController::class,'deleteArticle']);
 
 Route::get('/article', [ArticleController::class,  'index']);
 Route::get('/article/detail/{article:slug}', [ArticleController::class,  'detail']);
