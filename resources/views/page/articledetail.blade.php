@@ -17,7 +17,7 @@
         />
     </div>
     <div class="contents py-4">
-        {{ $article->description }}
+        {!! $article->description !!}
     </div>
     <div class="recommended my-4">
         <h2>More News</h2>

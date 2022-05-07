@@ -23,7 +23,7 @@
         <tr>
             <td>{{ $article->judul }}</td>
             <td>{{ $article->divisi->nama }}</td>
-            <td>{{ $article->description }}</td>            
+            <td>{!! nl2br($article->description) !!}</td>            
             <td>{{ Carbon\Carbon::parse($article->waktu)->format('d F Y') }}</td>
             <td>{{ Carbon\Carbon::parse($article->waktu)->format('h:i') }}</td>
             <td><img src="{{ asset('storage/Images/Article/' . $article->image) }}" width="100"></td>
