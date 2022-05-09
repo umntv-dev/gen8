@@ -22,7 +22,6 @@
 }
 
 .articleDetail .recommended .thumbnail {
-    background-image: url(../../images/article/article.png);
     background-size: cover;
     background-position: center;
     border-radius: 5px;

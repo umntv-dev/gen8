@@ -16,7 +16,6 @@
 }
 
 .article .highlight .background {
-    background-image: url(../../images/article/article.png);
     border-radius: 5px;
     background-size: cover;
     background-position: center;
@@ -78,7 +77,6 @@
 }
 
 .article .recommended .thumbnail {
-    background-image: url(../../images/article/article.png);
     background-size: cover;
     background-position: center;
     border-radius: 5px;

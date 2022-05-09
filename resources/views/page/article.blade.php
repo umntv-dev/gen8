@@ -6,8 +6,7 @@
 <div class="article">
     <div class="container">
         <div class="highlight" onclick="window.location='/article/detail/{{ $highlight->slug }}'">
-            <div class="background">
-                {{-- <img src="{{ asset('storage/Images/Article/' . $highlight->image) }}"> --}}
+            <div class="background" style=" background-image: url('{{ asset('storage/Images/Article/' . $highlight->image) }}');">
             </div>
             <div class="box">
                 <p>{{ $highlight->divisi->nama }}</p>
@@ -24,8 +23,7 @@
             <div class="row m-1">
                 @foreach($article as $key => $value)
                 <div class="thumbnail-wrapper col-md-4 p-1" onclick="window.location='/article/detail/{{ $value->slug }}'">
-                    <div class="thumbnail">
-                        {{-- <img src="{{ asset('storage/Images/Article/' . $value->image) }}"> --}}
+                    <div class="thumbnail" style=" background-image: url('{{ asset('storage/Images/Article/' . $value->image) }}');">
                         <div class="description px-3">
                             <p>{{ $value->divisi->nama }}</p>
                             <h6>{{ $value->judul }}</h6>

@@ -13,7 +13,7 @@
         </h6>
         <img
             id="thumbnail"
-            src="{{ asset('images/article/article.png') }}"
+            src="{{ asset('storage/Images/Article/' . $article->image) }}"
         />
     </div>
     <div class="contents py-4">
@@ -25,7 +25,7 @@
         <div class="row mx-1 justify-content-center">
             @for($i = 0; $i < 3; $i++)
                 <?php $index++; if($index > $jumlah) $index = 0 ?>
-                <div class="thumbnail col-md m-1" onclick="window.location='/article/detail/{{ $articles[$index]->slug }}'">
+                <div class="thumbnail col-md m-1" onclick="window.location='/article/detail/{{ $articles[$index]->slug }}'" style=" background-image: url('{{ asset('storage/Images/Article/' . $articles[$index]->image) }}');">
                     <div class="description px-3">
                         <p>{{ $articles[$index]->divisi->nama }}</p>
                         <h6>{{ $articles[$index]->judul }}</h6>
