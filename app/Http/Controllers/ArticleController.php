@@ -16,15 +16,20 @@ class ArticleController extends Controller
     public function index()
     {
         $article = Article::with('divisi')->get();
+        $countArticle = Article::count();
 
-        $count = Article::count()-1;
-        $random = rand(0,$count);
-        $highlight = $article[$random];
+        if ($countArticle == 0){
+            return view('page.comingsoon');
+        }else{
+            $count = Article::count()-1;
+            $random = rand(0,$count);
+            $highlight = $article[$random];
 
-        return view('page.article', [
-            'article' => $article,
-            'highlight' => $highlight
-        ]);
+            return view('page.article', [
+                'article' => $article,
+                'highlight' => $highlight
+            ]);
+        }
     }
 
     public function detail(Article $article)
