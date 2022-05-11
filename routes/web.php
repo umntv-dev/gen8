@@ -4,6 +4,7 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\EpisodeController;
+use App\Http\Controllers\CrewsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -58,6 +59,13 @@ Route::get('/article/detail/{article:slug}', [ArticleController::class,  'detail
 Route::get('/',[ProgramController::class, 'index']);
 Route::get('/program/{slug}', [ProgramController::class, 'detail']);
 Route::get('/program/video/{slug}/{embed}', [ProgramController::class, 'playvideo']);
+
+Route::get('/admin/crews', [CrewsController::class, 'showCrews']);
+Route::get('/admin/addcrews',[CrewsController::class,'addCrews']);
+Route::get('/admin/crews/{idCrews}',[CrewsController::class,'editCrews']);
+Route::post('/admin/crews/add',[CrewsController::class,'createCrews']);
+Route::post('/admin/crews/update',[CrewsController::class,'updateCrews']);
+Route::get('/admin/crews/delete/{idCrews}',[CrewsController::class,'deleteCrews']);
 
 Route::get('/crews', function () {
     return view('page.crews');
