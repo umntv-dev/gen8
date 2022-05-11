@@ -5,6 +5,8 @@ use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\EpisodeController;
 use App\Http\Controllers\CrewsController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,50 +24,63 @@ use Illuminate\Support\Facades\Route;
 //     return view('page.program');
 // });
 
-Auth::routes(['verify' => true]);
+// Auth::routes();
 
-Route::get('/home',function(){
-    return view('home');
+Route::group(['prefix' => 'crewumntv'], function(){
+    Route::get('/login-crew', [LoginController::class, 'showLoginForm']);
+    Route::post('/login',[LoginController::class, 'login'])->name('login');
+    Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 });
 
-Route::get('/admin', function () {
-    return view('admin.admin');
-})->middleware('auth');
+Route::group(['prefix' => 'cumanorangkerenyangbisaakses'],function(){
+    Route::get('/register', [RegisterController::class, 'showRegistrationForm']);
+    Route::post('/register', [RegisterController::class, 'register'])->name('register');
+});
 
-Route::get('/admin/program', [AdminController::class, 'showProgram']);
-Route::get('/admin/addprogram',[AdminController::class,'addProgram']);
-Route::get('/admin/program/{idProgram}',[AdminController::class,'editProgram']);
-Route::post('/admin/program/add',[AdminController::class,'createProgram']);
-Route::post('/admin/program/update',[AdminController::class,'updateProgram']);
-Route::get('/admin/program/delete/{idProgram}',[AdminController::class,'deleteProgram']);
+Route::group(['middleware' => 'auth'],function(){
+    Route::group(['prefix' => 'admin'], function(){
+        Route::get('/', [AdminController::class, 'index']);
+        Route::get('addprogram',[AdminController::class,'addProgram']);
+        Route::get('addarticle',[ArticleController::class,'addArticle']);
+        Route::get('addcrews',[CrewsController::class,'addCrews']);
+        Route::group(['prefix' => 'program'], function(){
+            Route::get('/', [AdminController::class, 'showProgram']);
+            Route::get('{idProgram}',[AdminController::class,'editProgram']);
+            Route::post('add',[AdminController::class,'createProgram']);
+            Route::post('update',[AdminController::class,'updateProgram']);
+            Route::get('delete/{idProgram}',[AdminController::class,'deleteProgram']);
+            Route::group(['prefix' => 'episode'], function(){
+                Route::get('{idProgram}',[EpisodeController::class,'index']);
+                Route::get('{idProgram}/addepisode',[EpisodeController::class,'addEpisode']);
+                Route::get('{idProgram}/edit/{idepisode}',[EpisodeController::class,'editEpisode']);
+                Route::post('add',[EpisodeController::class,'createEpisode']);
+                Route::post('update',[EpisodeController::class,'updateEpisode']);
+                Route::get('{idProgram}/delete/{idepisode}',[EpisodeController::class,'deleteEpisode']);
+            });
+        });
+        Route::group(['prefix' => 'article'], function(){
+            Route::get('/', [ArticleController::class, 'showArticle']);
+            Route::get('{idArticle}',[ArticleController::class,'editArticle']);
+            Route::post('add',[ArticleController::class,'createArticle']);
+            Route::post('update',[ArticleController::class,'updateArticle']);
+            Route::get('delete/{idArticle}',[ArticleController::class,'deleteArticle']);
+        });
+        Route::group(['prefix' => 'crews'], function(){
+            Route::get('/', [CrewsController::class, 'showCrews']);
+            Route::get('{idCrews}',[CrewsController::class,'editCrews']);
+            Route::post('add',[CrewsController::class,'createCrews']);
+            Route::post('update',[CrewsController::class,'updateCrews']);
+            Route::get('delete/{idCrews}',[CrewsController::class,'deleteCrews']);
+        });
+    });
+});
 
-Route::get('/admin/program/episode/{idProgram}',[EpisodeController::class,'index']);
-Route::get('/admin/program/episode/{idProgram}/addepisode',[EpisodeController::class,'addEpisode']);
-Route::get('/admin/program/episode/{idProgram}/edit/{idepisode}',[EpisodeController::class,'editEpisode']);
-Route::post('/admin/program/episode/add',[EpisodeController::class,'createEpisode']);
-Route::post('/admin/program/episode/update',[EpisodeController::class,'updateEpisode']);
-Route::get('/admin/program/episode/{idProgram}/delete/{idepisode}',[EpisodeController::class,'deleteEpisode']);
-
-Route::get('/admin/article', [ArticleController::class, 'showArticle']);
-Route::get('/admin/addarticle',[ArticleController::class,'addArticle']);
-Route::get('/admin/article/{idArticle}',[ArticleController::class,'editArticle']);
-Route::post('/admin/article/add',[ArticleController::class,'createArticle']);
-Route::post('/admin/article/update',[ArticleController::class,'updateArticle']);
-Route::get('/admin/article/delete/{idArticle}',[ArticleController::class,'deleteArticle']);
-
+// Guest can access
 Route::get('/article', [ArticleController::class,  'index']);
 Route::get('/article/detail/{article:slug}', [ArticleController::class,  'detail']);
-
-Route::get('/',[ProgramController::class, 'index']);
+Route::get('/',[ProgramController::class, 'index'])->name('home');
 Route::get('/program/{slug}', [ProgramController::class, 'detail']);
 Route::get('/program/video/{slug}/{embed}', [ProgramController::class, 'playvideo']);
-
-Route::get('/admin/crews', [CrewsController::class, 'showCrews']);
-Route::get('/admin/addcrews',[CrewsController::class,'addCrews']);
-Route::get('/admin/crews/{idCrews}',[CrewsController::class,'editCrews']);
-Route::post('/admin/crews/add',[CrewsController::class,'createCrews']);
-Route::post('/admin/crews/update',[CrewsController::class,'updateCrews']);
-Route::get('/admin/crews/delete/{idCrews}',[CrewsController::class,'deleteCrews']);
 
 Route::get('/crews', function () {
     return view('page.crews');
@@ -74,6 +89,7 @@ Route::get('/crews', function () {
 Route::get('/about', function () {
     return view('page.about');
 });
+
 
 // Auth::routes();
 

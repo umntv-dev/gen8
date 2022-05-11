@@ -14,6 +14,10 @@ class AdminController extends Controller
     public function __construct(){
         $this->middleware("auth");
     }
+
+    public function index(){
+        return view('admin.admin');
+    }
     
     public function showProgram(){
        $params = Program::with(['divisi','episode'])->get();
